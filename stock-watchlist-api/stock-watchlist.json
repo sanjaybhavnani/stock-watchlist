@@ -1,0 +1,918 @@
+{
+  "stocks": [
+    {
+      "symbol": "RELIANCE",
+      "name": "Reliance Industries Ltd."
+    },
+    {
+      "symbol": "TCS",
+      "name": "Tata Consultancy Services Ltd."
+    },
+    {
+      "symbol": "HDFCBANK",
+      "name": "HDFC Bank Ltd."
+    },
+    {
+      "symbol": "INFY",
+      "name": "Infosys Ltd."
+    },
+    {
+      "symbol": "ICICIBANK",
+      "name": "ICICI Bank Ltd."
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "name": "Hindustan Unilever Ltd."
+    },
+    {
+      "symbol": "SBIN",
+      "name": "State Bank of India"
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "name": "Bharti Airtel Ltd."
+    },
+    {
+      "symbol": "ITC",
+      "name": "ITC Ltd."
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "name": "Kotak Mahindra Bank Ltd."
+    },
+    {
+      "symbol": "LT",
+      "name": "Larsen & Toubro Ltd."
+    },
+    {
+      "symbol": "AXISBANK",
+      "name": "Axis Bank Ltd."
+    },
+    {
+      "symbol": "HCLTECH",
+      "name": "HCL Technologies Ltd."
+    },
+    {
+      "symbol": "MARUTI",
+      "name": "Maruti Suzuki India Ltd."
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "name": "Bajaj Finance Ltd."
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "name": "Asian Paints Ltd."
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "name": "Sun Pharmaceutical Industries Ltd."
+    },
+    {
+      "symbol": "TITAN",
+      "name": "Titan Company Ltd."
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "name": "UltraTech Cement Ltd."
+    },
+    {
+      "symbol": "WIPRO",
+      "name": "Wipro Ltd."
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "name": "Bajaj Finserv Ltd."
+    },
+    {
+      "symbol": "POWERGRID",
+      "name": "Power Grid Corporation of India Ltd."
+    },
+    {
+      "symbol": "NTPC",
+      "name": "NTPC Ltd."
+    },
+    {
+      "symbol": "ONGC",
+      "name": "Oil & Natural Gas Corporation Ltd."
+    },
+    {
+      "symbol": "TATAMOTORS",
+      "name": "Tata Motors Ltd."
+    },
+    {
+      "symbol": "ADANIENT",
+      "name": "Adani Enterprises Ltd."
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "name": "JSW Steel Ltd."
+    },
+    {
+      "symbol": "TECHM",
+      "name": "Tech Mahindra Ltd."
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "name": "HDFC Life Insurance Company Ltd."
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "Divi's Laboratories Ltd."
+    },
+    {
+      "symbol": "TATASTEEL",
+      "name": "Tata Steel Ltd."
+    },
+    {
+      "symbol": "GRASIM",
+      "name": "Grasim Industries Ltd."
+    },
+    {
+      "symbol": "DRREDDY",
+      "name": "Dr. Reddy's Laboratories Ltd."
+    },
+    {
+      "symbol": "BPCL",
+      "name": "Bharat Petroleum Corporation Ltd."
+    },
+    {
+      "symbol": "BRITANNIA",
+      "name": "Britannia Industries Ltd."
+    },
+    {
+      "symbol": "CIPLA",
+      "name": "Cipla Ltd."
+    },
+    {
+      "symbol": "EICHERMOT",
+      "name": "Eicher Motors Ltd."
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "name": "Hero MotoCorp Ltd."
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "name": "IndusInd Bank Ltd."
+    },
+    {
+      "symbol": "SHREECEM",
+      "name": "Shree Cement Ltd."
+    },
+    {
+      "symbol": "HDFCAMC",
+      "name": "HDFC Asset Management Company Ltd."
+    },
+    {
+      "symbol": "SBILIFE",
+      "name": "SBI Life Insurance Company Ltd."
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "name": "Bajaj Auto Ltd."
+    },
+    {
+      "symbol": "M&M",
+      "name": "Mahindra & Mahindra Ltd."
+    },
+    {
+      "symbol": "GAIL",
+      "name": "GAIL (India) Ltd."
+    },
+    {
+      "symbol": "IOC",
+      "name": "Indian Oil Corporation Ltd."
+    },
+    {
+      "symbol": "COALINDIA",
+      "name": "Coal India Ltd."
+    },
+    {
+      "symbol": "PIDILITIND",
+      "name": "Pidilite Industries Ltd."
+    },
+    {
+      "symbol": "DABUR",
+      "name": "Dabur India Ltd."
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "name": "Adani Ports and Special Economic Zone Ltd."
+    },
+    {
+      "symbol": "HAVELLS",
+      "name": "Havells India Ltd."
+    },
+    {
+      "symbol": "AMBUJACEM",
+      "name": "Ambuja Cements Ltd."
+    },
+    {
+      "symbol": "TATAPOWER",
+      "name": "Tata Power Company Ltd."
+    },
+    {
+      "symbol": "UPL",
+      "name": "UPL Ltd."
+    },
+    {
+      "symbol": "NESTLEIND",
+      "name": "Nestle India Ltd."
+    },
+    {
+      "symbol": "SIEMENS",
+      "name": "Siemens Ltd."
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "name": "Apollo Hospitals Enterprise Ltd."
+    },
+    {
+      "symbol": "BERGEPAINT",
+      "name": "Berger Paints India Ltd."
+    },
+    {
+      "symbol": "TATACONSUM",
+      "name": "Tata Consumer Products Ltd."
+    },
+    {
+      "symbol": "MARICO",
+      "name": "Marico Ltd."
+    },
+    {
+      "symbol": "ICICIPRULI",
+      "name": "ICICI Prudential Life Insurance Company Ltd."
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "name": "Muthoot Finance Ltd."
+    },
+    {
+      "symbol": "GODREJCP",
+      "name": "Godrej Consumer Products Ltd."
+    },
+    {
+      "symbol": "SRF",
+      "name": "SRF Ltd."
+    },
+    {
+      "symbol": "PAGEIND",
+      "name": "Page Industries Ltd."
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "name": "Bosch Ltd."
+    },
+    {
+      "symbol": "COLPAL",
+      "name": "Colgate Palmolive (India) Ltd."
+    },
+    {
+      "symbol": "DLF",
+      "name": "DLF Ltd."
+    },
+    {
+      "symbol": "AUROPHARMA",
+      "name": "Aurobindo Pharma Ltd."
+    },
+    {
+      "symbol": "LUPIN",
+      "name": "Lupin Ltd."
+    },
+    {
+      "symbol": "ICICIGI",
+      "name": "ICICI Lombard General Insurance Company Ltd."
+    },
+    {
+      "symbol": "HINDALCO",
+      "name": "Hindalco Industries Ltd."
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "name": "Torrent Pharmaceuticals Ltd."
+    },
+    {
+      "symbol": "PETRONET",
+      "name": "Petronet LNG Ltd."
+    },
+    {
+      "symbol": "VOLTAS",
+      "name": "Voltas Ltd."
+    },
+    {
+      "symbol": "MCDOWELL-N",
+      "name": "United Spirits Ltd."
+    },
+    {
+      "symbol": "GODREJPROP",
+      "name": "Godrej Properties Ltd."
+    },
+    {
+      "symbol": "HINDPETRO",
+      "name": "Hindustan Petroleum Corporation Ltd."
+    },
+    {
+      "symbol": "SAIL",
+      "name": "Steel Authority of India Ltd."
+    },
+    {
+      "symbol": "BANKBARODA",
+      "name": "Bank of Baroda"
+    },
+    {
+      "symbol": "IDFCFIRSTB",
+      "name": "IDFC First Bank Ltd."
+    },
+    {
+      "symbol": "CANBK",
+      "name": "Canara Bank"
+    },
+    {
+      "symbol": "BANDHANBNK",
+      "name": "Bandhan Bank Ltd."
+    },
+    {
+      "symbol": "PNB",
+      "name": "Punjab National Bank"
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "name": "Federal Bank Ltd."
+    },
+    {
+      "symbol": "INDIGO",
+      "name": "InterGlobe Aviation Ltd."
+    },
+    {
+      "symbol": "DMART",
+      "name": "Avenue Supermarts Ltd."
+    },
+    {
+      "symbol": "BIOCON",
+      "name": "Biocon Ltd."
+    },
+    {
+      "symbol": "RECLTD",
+      "name": "REC Ltd."
+    },
+    {
+      "symbol": "NHPC",
+      "name": "NHPC Ltd."
+    },
+    {
+      "symbol": "PIIND",
+      "name": "PI Industries Ltd."
+    },
+    {
+      "symbol": "ABBOTINDIA",
+      "name": "Abbott India Ltd."
+    },
+    {
+      "symbol": "GLAND",
+      "name": "Gland Pharma Ltd."
+    },
+    {
+      "symbol": "ALKEM",
+      "name": "Alkem Laboratories Ltd."
+    },
+    {
+      "symbol": "NAVINFLUOR",
+      "name": "Navin Fluorine International Ltd."
+    },
+    {
+      "symbol": "TRENT",
+      "name": "Trent Ltd."
+    },
+    {
+      "symbol": "JUBLFOOD",
+      "name": "Jubilant FoodWorks Ltd."
+    },
+    {
+      "symbol": "MPHASIS",
+      "name": "Mphasis Ltd."
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "name": "Oberoi Realty Ltd."
+    },
+    {
+      "symbol": "CONCOR",
+      "name": "Container Corporation of India Ltd."
+    },
+    {
+      "symbol": "ATUL",
+      "name": "Atul Ltd."
+    },
+    {
+      "symbol": "AARTIIND",
+      "name": "Aarti Industries Ltd."
+    },
+    {
+      "symbol": "SUNTV",
+      "name": "Sun TV Network Ltd."
+    },
+    {
+      "symbol": "MINDTREE",
+      "name": "Mindtree Ltd."
+    },
+    {
+      "symbol": "ESCORTS",
+      "name": "Escorts Kubota Ltd."
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "name": "Cholamandalam Investment and Finance Company Ltd."
+    },
+    {
+      "symbol": "CROMPTON",
+      "name": "Crompton Greaves Consumer Electricals Ltd."
+    },
+    {
+      "symbol": "DEEPAKNTR",
+      "name": "Deepak Nitrite Ltd."
+    },
+    {
+      "symbol": "POLYCAB",
+      "name": "Polycab India Ltd."
+    },
+    {
+      "symbol": "INDIAMART",
+      "name": "IndiaMART InterMESH Ltd."
+    },
+    {
+      "symbol": "METROPOLIS",
+      "name": "Metropolis Healthcare Ltd."
+    },
+    {
+      "symbol": "LALPATHLAB",
+      "name": "Dr. Lal PathLabs Ltd."
+    },
+    {
+      "symbol": "ICICISENS",
+      "name": "ICICI Securities Ltd."
+    },
+    {
+      "symbol": "HONAUT",
+      "name": "Honeywell Automation India Ltd."
+    },
+    {
+      "symbol": "BALKRISIND",
+      "name": "Balkrishna Industries Ltd."
+    },
+    {
+      "symbol": "GUJGASLTD",
+      "name": "Gujarat Gas Ltd."
+    },
+    {
+      "symbol": "MOTILALOFS",
+      "name": "Motilal Oswal Financial Services Ltd."
+    },
+    {
+      "symbol": "TATACHEM",
+      "name": "Tata Chemicals Ltd."
+    },
+    {
+      "symbol": "RAJESHEXPO",
+      "name": "Rajesh Exports Ltd."
+    },
+    {
+      "symbol": "RAMCOCEM",
+      "name": "The Ramco Cements Ltd."
+    },
+    {
+      "symbol": "PFIZER",
+      "name": "Pfizer Ltd."
+    },
+    {
+      "symbol": "SYNGENE",
+      "name": "Syngene International Ltd."
+    },
+    {
+      "symbol": "AUBANK",
+      "name": "AU Small Finance Bank Ltd."
+    },
+    {
+      "symbol": "IDBI",
+      "name": "IDBI Bank Ltd."
+    },
+    {
+      "symbol": "TATACOMM",
+      "name": "Tata Communications Ltd."
+    },
+    {
+      "symbol": "GMRINFRA",
+      "name": "GMR Airports Infrastructure Ltd."
+    },
+    {
+      "symbol": "IRCTC",
+      "name": "Indian Railway Catering & Tourism Corporation Ltd."
+    },
+    {
+      "symbol": "BATAINDIA",
+      "name": "Bata India Ltd."
+    },
+    {
+      "symbol": "LICHSGFIN",
+      "name": "LIC Housing Finance Ltd."
+    },
+    {
+      "symbol": "SRTRANSFIN",
+      "name": "Shriram Transport Finance Company Ltd."
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Ltd."
+    },
+    {
+      "symbol": "HINDCOPPER",
+      "name": "Hindustan Copper Ltd."
+    },
+    {
+      "symbol": "JINDALSTEL",
+      "name": "Jindal Steel & Power Ltd."
+    },
+    {
+      "symbol": "NMDC",
+      "name": "NMDC Ltd."
+    },
+    {
+      "symbol": "APLLTD",
+      "name": "Alembic Pharmaceuticals Ltd."
+    },
+    {
+      "symbol": "GLENMARK",
+      "name": "Glenmark Pharmaceuticals Ltd."
+    },
+    {
+      "symbol": "CANFINHOME",
+      "name": "Can Fin Homes Ltd."
+    },
+    {
+      "symbol": "SUNDRMFAST",
+      "name": "Sundram Fasteners Ltd."
+    },
+    {
+      "symbol": "CESC",
+      "name": "CESC Ltd."
+    },
+    {
+      "symbol": "FINCABLES",
+      "name": "Finolex Cables Ltd."
+    },
+    {
+      "symbol": "JUBLINGREA",
+      "name": "Jubilant Ingrevia Ltd."
+    },
+    {
+      "symbol": "BEML",
+      "name": "BEML Ltd."
+    },
+    {
+      "symbol": "VGUARD",
+      "name": "V-Guard Industries Ltd."
+    },
+    {
+      "symbol": "SJVN",
+      "name": "SJVN Ltd."
+    },
+    {
+      "symbol": "IRFC",
+      "name": "Indian Railway Finance Corporation Ltd."
+    },
+    {
+      "symbol": "NH",
+      "name": "Narayana Hrudayalaya Ltd."
+    },
+    {
+      "symbol": "RBLBANK",
+      "name": "RBL Bank Ltd."
+    },
+    {
+      "symbol": "CAMS",
+      "name": "Computer Age Management Services Ltd."
+    },
+    {
+      "symbol": "POLYMED",
+      "name": "Poly Medicure Ltd."
+    },
+    {
+      "symbol": "ASTRAL",
+      "name": "Astral Ltd."
+    },
+    {
+      "symbol": "GRANULES",
+      "name": "Granules India Ltd."
+    },
+    {
+      "symbol": "MGL",
+      "name": "Mahanagar Gas Ltd."
+    },
+    {
+      "symbol": "AIAENG",
+      "name": "AIA Engineering Ltd."
+    },
+    {
+      "symbol": "GODREJIND",
+      "name": "Godrej Industries Ltd."
+    },
+    {
+      "symbol": "INDHOTEL",
+      "name": "The Indian Hotels Company Ltd."
+    },
+    {
+      "symbol": "SOBHA",
+      "name": "Sobha Ltd."
+    },
+    {
+      "symbol": "BLUEDART",
+      "name": "Blue Dart Express Ltd."
+    },
+    {
+      "symbol": "PVRINOX",
+      "name": "PVR INOX Ltd."
+    },
+    {
+      "symbol": "TATAMTRDVR",
+      "name": "Tata Motors DVR"
+    },
+    {
+      "symbol": "JSL",
+      "name": "Jindal Stainless Ltd."
+    },
+    {
+      "symbol": "TRIDENT",
+      "name": "Trident Ltd."
+    },
+    {
+      "symbol": "CENTURYTEX",
+      "name": "Century Textiles & Industries Ltd."
+    },
+    {
+      "symbol": "BHEL",
+      "name": "Bharat Heavy Electricals Ltd."
+    },
+    {
+      "symbol": "IDFC",
+      "name": "IDFC Ltd."
+    },
+    {
+      "symbol": "SUNDARMFIN",
+      "name": "Sundaram Finance Ltd."
+    },
+    {
+      "symbol": "GODFRYPHLP",
+      "name": "Godfrey Phillips India Ltd."
+    },
+    {
+      "symbol": "CUMMINSIND",
+      "name": "Cummins India Ltd."
+    },
+    {
+      "symbol": "COROMANDEL",
+      "name": "Coromandel International Ltd."
+    },
+    {
+      "symbol": "SUPREMEIND",
+      "name": "Supreme Industries Ltd."
+    },
+    {
+      "symbol": "SCHAEFFLER",
+      "name": "Schaeffler India Ltd."
+    },
+    {
+      "symbol": "THERMAX",
+      "name": "Thermax Ltd."
+    },
+    {
+      "symbol": "ABB",
+      "name": "ABB India Ltd."
+    },
+    {
+      "symbol": "HATSUN",
+      "name": "Hatsun Agro Product Ltd."
+    },
+    {
+      "symbol": "KEI",
+      "name": "KEI Industries Ltd."
+    },
+    {
+      "symbol": "GILLETTE",
+      "name": "Gillette India Ltd."
+    },
+    {
+      "symbol": "SKFINDIA",
+      "name": "SKF India Ltd."
+    },
+    {
+      "symbol": "MAHLOG",
+      "name": "Mahindra Logistics Ltd."
+    },
+    {
+      "symbol": "SPARC",
+      "name": "Sun Pharma Advanced Research Company Ltd."
+    },
+    {
+      "symbol": "JBCHEPHARM",
+      "name": "JB Chemicals & Pharmaceuticals Ltd."
+    },
+    {
+      "symbol": "SFL",
+      "name": "Sundaram Finance Holdings Ltd."
+    },
+    {
+      "symbol": "TASTYBITE",
+      "name": "Tasty Bite Eatables Ltd."
+    },
+    {
+      "symbol": "MAHSCOOTER",
+      "name": "Maharashtra Scooters Ltd."
+    },
+    {
+      "symbol": "EIDPARRY",
+      "name": "EID Parry India Ltd."
+    },
+    {
+      "symbol": "KPRMILL",
+      "name": "K.P.R. Mill Ltd."
+    },
+    {
+      "symbol": "SIS",
+      "name": "SIS Ltd."
+    },
+    {
+      "symbol": "JYOTHYLAB",
+      "name": "Jyothy Labs Ltd."
+    },
+    {
+      "symbol": "VSTIND",
+      "name": "VST Industries Ltd."
+    },
+    {
+      "symbol": "TTKPRESTIG",
+      "name": "TTK Prestige Ltd."
+    },
+    {
+      "symbol": "IFBIND",
+      "name": "IFB Industries Ltd."
+    },
+    {
+      "symbol": "PGHH",
+      "name": "Procter & Gamble Hygiene & Health Care Ltd."
+    },
+    {
+      "symbol": "TITAGARH",
+      "name": "Titagarh Rail Systems Ltd."
+    },
+    {
+      "symbol": "SANDHAR",
+      "name": "Sandhar Technologies Ltd."
+    },
+    {
+      "symbol": "KALPATPOWR",
+      "name": "Kalpataru Power Transmission Ltd."
+    },
+    {
+      "symbol": "HIKAL",
+      "name": "Hikal Ltd."
+    },
+    {
+      "symbol": "RATNAMANI",
+      "name": "Ratnamani Metals & Tubes Ltd."
+    },
+    {
+      "symbol": "NATIONALUM",
+      "name": "National Aluminium Company Ltd."
+    },
+    {
+      "symbol": "TATAELXSI",
+      "name": "Tata Elxsi Ltd."
+    },
+    {
+      "symbol": "AAVAS",
+      "name": "Aavas Financiers Ltd."
+    },
+    {
+      "symbol": "CLEAN",
+      "name": "Clean Science and Technology Ltd."
+    },
+    {
+      "symbol": "ROUTE",
+      "name": "Route Mobile Ltd."
+    },
+    {
+      "symbol": "CREDITACC",
+      "name": "CreditAccess Grameen Ltd."
+    },
+    {
+      "symbol": "KIMS",
+      "name": "Krishna Institute of Medical Sciences Ltd."
+    },
+    {
+      "symbol": "TATVA",
+      "name": "Tatva Chintan Pharma Chem Ltd."
+    },
+    {
+      "symbol": "GLS",
+      "name": "Glenmark Life Sciences Ltd."
+    },
+    {
+      "symbol": "CHEMPLASTS",
+      "name": "Chemplast Sanmar Ltd."
+    },
+    {
+      "symbol": "DEVYANI",
+      "name": "Devyani International Ltd."
+    },
+    {
+      "symbol": "EXIDEIND",
+      "name": "Exide Industries Ltd."
+    },
+    {
+      "symbol": "AMARAJABAT",
+      "name": "Amara Raja Energy & Mobility Ltd."
+    },
+    {
+      "symbol": "MRF",
+      "name": "MRF Ltd."
+    },
+    {
+      "symbol": "APARINDS",
+      "name": "Apar Industries Ltd."
+    },
+    {
+      "symbol": "BASF",
+      "name": "BASF India Ltd."
+    },
+    {
+      "symbol": "CASTROLIND",
+      "name": "Castrol India Ltd."
+    },
+    {
+      "symbol": "FINOLEXIND",
+      "name": "Finolex Industries Ltd."
+    },
+    {
+      "symbol": "GODREJAGRO",
+      "name": "Godrej Agrovet Ltd."
+    },
+    {
+      "symbol": "HGS",
+      "name": "Hinduja Global Solutions Ltd."
+    },
+    {
+      "symbol": "JINDALSAW",
+      "name": "Jindal Saw Ltd."
+    },
+    {
+      "symbol": "KNRCON",
+      "name": "KNR Constructions Ltd."
+    },
+    {
+      "symbol": "MAHSEAMLES",
+      "name": "Maharashtra Seamless Ltd."
+    },
+    {
+      "symbol": "NCC",
+      "name": "NCC Ltd."
+    },
+    {
+      "symbol": "ORIENTELEC",
+      "name": "Orient Electric Ltd."
+    },
+    {
+      "symbol": "PERSISTENT",
+      "name": "Persistent Systems Ltd."
+    },
+    {
+      "symbol": "RALLIS",
+      "name": "Rallis India Ltd."
+    },
+    {
+      "symbol": "SWSOLAR",
+      "name": "Sterling and Wilson Renewable Energy Ltd."
+    },
+    {
+      "symbol": "TATAINVEST",
+      "name": "Tata Investment Corporation Ltd."
+    },
+    {
+      "symbol": "UCOBANK",
+      "name": "UCO Bank"
+    },
+    {
+      "symbol": "VAKRANGEE",
+      "name": "Vakrangee Ltd."
+    },
+    {
+      "symbol": "WELCORP",
+      "name": "Welspun Corp Ltd."
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "Zydus Lifesciences Ltd."
+    }
+  ],
+  "watchlists": [],
+  "alive": true
+}

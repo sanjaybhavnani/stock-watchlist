@@ -1,0 +1,16 @@
+{
+  "name": "stock-watchlist",
+  "version": "1.0.0",
+  "description": "Take home assignment as part of a job interview process. Develop a stock watchlist feature where user can create watchlist of stocks from available stocks. Prices for the watchlist stocks should dynamically update. User should be able to set price based alerts for stocks.",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install --prefix stock-watchlist-api && npm install --prefix stock-watchlist-ui",
+    "start": "concurrently \"npm run dev --prefix stock-watchlist-api\" \"npm start --prefix stock-watchlist-ui\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

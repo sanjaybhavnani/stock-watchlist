@@ -1,0 +1,14 @@
+:host {
+  .app-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .app-heading a {
+      font-size: 1.5rem;
+    }
+    .app-header-nav {
+      padding: 0 2rem;
+    }
+  }
+}

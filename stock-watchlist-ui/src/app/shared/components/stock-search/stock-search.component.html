@@ -1,0 +1,21 @@
+<form [formGroup]="searchForm">
+  <mat-form-field appearance="outline">
+    <input
+      matInput
+      formControlName="searchText"
+      placeholder="Type to search stock by name or symbol"
+      [matAutocomplete]="searchOptions"
+    />
+    <mat-autocomplete #searchOptions="matAutocomplete">
+      @if(stockSearchStore.loading()) {
+        <mat-option disabled>Searching...</mat-option>
+      } @else if(stockSearchStore.noResults()) {
+        <mat-option disabled>No results</mat-option>
+      } @else { 
+        @for(option of stockSearchStore.stocks(); track option) {
+          <mat-option> {{ option.name }} ({{ option.symbol }}) </mat-option>
+        }
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
