@@ -5,8 +5,9 @@ import { Subscription } from 'rxjs';
 
 export interface StockSearchState {
   stocks: Stock[];
-  status: 'idle' | 'loading' | 'complete';
   searchText: string;
+  status: 'idle' | 'loading' | 'complete';
+  errorMessage: string;
 }
 
 @Injectable()
@@ -16,16 +17,21 @@ export class StockSearchStore {
     stocks: [] as Stock[],
     status: 'idle',
     searchText: '',
+    errorMessage: '',
   };
   private _stateSignal = signal<StockSearchState>(this.initialState);
 
   searchText = computed(() => this._stateSignal().searchText);
   stocks = computed(() => this._stateSignal().stocks);
   loading = computed(() => this._stateSignal().status === 'loading');
-  noResults = computed(() => this._stateSignal().status === 'complete' && this.stocks().length === 0);
+  noResults = computed(
+    () =>
+      this._stateSignal().status === 'complete' && this.stocks().length === 0
+  );
+  errorMessage = computed(() => this._stateSignal().errorMessage);
 
   private searchSubscription!: Subscription;
-  
+
   constructor() {
     this.searchTextEffect();
   }
@@ -63,6 +69,16 @@ export class StockSearchStore {
               ...state,
               stocks,
             }));
+          },
+          error: (err) => {
+            this._stateSignal.update((state) => {
+              console.error(err);
+              return {
+                ...state,
+                status: 'complete',
+                errorMessage: 'Search failed',
+              };
+            });
           },
           complete: () => {
             this._stateSignal.update((state) => ({

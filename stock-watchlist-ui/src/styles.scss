@@ -8,3 +8,11 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.non-selectable-option.mat-mdc-option.mdc-list-item--disabled .mdc-list-item__primary-text {
+  opacity: 1;
+}
+
+.error-text {
+  color: rgb(246, 75, 75);
+}

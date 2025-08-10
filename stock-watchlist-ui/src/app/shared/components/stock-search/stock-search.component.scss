@@ -1,6 +1,20 @@
 :host {
-    padding: 2rem;
-    mat-form-field {
-        width: 100%;
-    }
+  padding: 2rem;
+  mat-form-field {
+    width: 100%;
+  }
 }
+
+ .app-search-result-row {
+    display: flex;
+    gap: 1rem;
+    .stock-symbol {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 200;
+      background-color: #2481c3;
+      border-radius: 5px;
+      padding: 0 0.5rem;
+      color: white;
+    }
+  }
