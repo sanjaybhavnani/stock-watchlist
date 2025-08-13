@@ -1,0 +1,6 @@
+@if(stockStore.stock(); as stock) {
+<app-stock-card
+  [stock]="stock"
+  [latestPrice]="(stockPrice$ | async) || stock.lastClose"
+></app-stock-card>
+}

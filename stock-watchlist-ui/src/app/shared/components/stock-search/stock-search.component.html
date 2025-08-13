@@ -6,22 +6,25 @@
       placeholder="Type to search stock by name or symbol"
       [matAutocomplete]="searchOptions"
     />
-    <mat-autocomplete #searchOptions="matAutocomplete">
+    <mat-autocomplete
+      #searchOptions="matAutocomplete"
+      (optionSelected)="stockSelected.emit($event.option.value)"
+    >
       @if(stockSearchStore.loading()) {
-      <mat-option class="non-selectable-option" disabled>Searching...</mat-option>
-      }
-      @else if(stockSearchStore.errorMessage()) {
-        <mat-option class="non-selectable-option" disabled>
-          <span class="error-text">
-            {{ stockSearchStore.errorMessage() }}
-          </span>
-        </mat-option>
-        
-      }
-       @else if(stockSearchStore.noResults()) {
-      <mat-option class="non-selectable-option"  disabled>No results</mat-option>
-      } @else { @for(option of stockSearchStore.stocks(); track option) {
-      <mat-option>
+      <mat-option class="non-selectable-option" disabled
+        >Searching...</mat-option
+      >
+      } @else if(stockSearchStore.errorMessage()) {
+      <mat-option class="non-selectable-option" disabled>
+        <span class="error-text">
+          {{ stockSearchStore.errorMessage() }}
+        </span>
+      </mat-option>
+
+      } @else if(stockSearchStore.noResults()) {
+      <mat-option class="non-selectable-option" disabled>No results</mat-option>
+      } @else { @for(option of stockSearchStore.data(); track option) {
+      <mat-option [value]="option.symbol">
         <div class="app-search-result-row">
           <span>{{ option.name }} </span>
           <span class="stock-symbol">{{ option.symbol }}</span>

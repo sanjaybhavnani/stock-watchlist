@@ -4,6 +4,9 @@ import cors from 'cors'; // <-- Add this import
 import { HealthCheckController } from './health-check/health-check.controller';
 import { initDb } from './data/db';
 import { StocksController } from './stocks/stocks.controller';
+import { IntervalDataSource } from './data/interval-data-source';
+import { socketServer } from './websocket/socket-server';
+import http from 'http';
 
 (async () => {
   await initDb();
@@ -17,10 +20,13 @@ import { StocksController } from './stocks/stocks.controller';
 
   app.use('/api/health-check', new HealthCheckController().router);
   app.use('/api/stocks', new StocksController().router);
+  const server = http.createServer(app);
+
+  socketServer(server);
 
   const PORT = process.env.PORT || 3000;
-
-  app.listen(PORT, () => {
+  server.listen(PORT, () => {
     console.log(`Server running ony port ${PORT}`);
+    IntervalDataSource.getInstance().startInterval();
   });
 })();

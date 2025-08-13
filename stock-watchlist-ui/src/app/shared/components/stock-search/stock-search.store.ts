@@ -2,89 +2,53 @@ import { computed, effect, inject, Injectable, signal } from '@angular/core';
 import { Stock } from '../../models/stock.model';
 import { StocksService } from '../../services/stocks.service';
 import { Subscription } from 'rxjs';
-
-export interface StockSearchState {
-  stocks: Stock[];
-  searchText: string;
-  status: 'idle' | 'loading' | 'complete';
-  errorMessage: string;
-}
+import { AppBaseStore } from '../../store/base.store';
 
 @Injectable()
-export class StockSearchStore {
+export class StockSearchStore extends AppBaseStore<Stock[], string> {
   private stockService = inject(StocksService);
-  private initialState: StockSearchState = {
-    stocks: [] as Stock[],
-    status: 'idle',
-    searchText: '',
-    errorMessage: '',
-  };
-  private _stateSignal = signal<StockSearchState>(this.initialState);
-
-  searchText = computed(() => this._stateSignal().searchText);
-  stocks = computed(() => this._stateSignal().stocks);
-  loading = computed(() => this._stateSignal().status === 'loading');
-  noResults = computed(
-    () =>
-      this._stateSignal().status === 'complete' && this.stocks().length === 0
-  );
-  errorMessage = computed(() => this._stateSignal().errorMessage);
-
-  private searchSubscription!: Subscription;
-
   constructor() {
+    super([], '');
     this.searchTextEffect();
   }
+
+  private searchSubscription!: Subscription;
 
   updateSearchText(searchText: string) {
     this._stateSignal.update((state) => ({
       ...state,
-      searchText,
+      params: searchText,
     }));
   }
 
-  resetState() {
-    this._stateSignal.update((state) => this.initialState);
+  override resetState() {
+    super.resetState();
   }
 
   private searchTextEffect() {
     effect(() => {
-      const searchText = this.searchText();
+      const searchText = this.params();
       if (searchText.length < 3) {
         return;
       }
-      this._stateSignal.update((state) => ({
-        ...state,
-        status: 'loading',
-      }));
-
+      this.startLoading();
       if (this.searchSubscription && !this.searchSubscription.closed) {
         this.searchSubscription.unsubscribe();
       }
       this.searchSubscription = this.stockService
         .searchStocks(searchText)
         .subscribe({
-          next: (stocks) => {
+          next: (data) => {
             this._stateSignal.update((state) => ({
               ...state,
-              stocks,
+              data,
             }));
           },
           error: (err) => {
-            this._stateSignal.update((state) => {
-              console.error(err);
-              return {
-                ...state,
-                status: 'complete',
-                errorMessage: 'Search failed',
-              };
-            });
+            this.updateError(err?.message || 'Search Failed');
           },
           complete: () => {
-            this._stateSignal.update((state) => ({
-              ...state,
-              status: 'complete',
-            }));
+            this.completeLoading();
           },
         });
     });

@@ -2,915 +2,1143 @@
   "stocks": [
     {
       "symbol": "RELIANCE",
-      "name": "Reliance Industries Ltd."
+      "name": "Reliance Industries Ltd.",
+      "lastClose": 2806.87
     },
     {
       "symbol": "TCS",
-      "name": "Tata Consultancy Services Ltd."
+      "name": "Tata Consultancy Services Ltd.",
+      "lastClose": 1342.19
     },
     {
       "symbol": "HDFCBANK",
-      "name": "HDFC Bank Ltd."
+      "name": "HDFC Bank Ltd.",
+      "lastClose": 977.08
     },
     {
       "symbol": "INFY",
-      "name": "Infosys Ltd."
+      "name": "Infosys Ltd.",
+      "lastClose": 1185.93
     },
     {
       "symbol": "ICICIBANK",
-      "name": "ICICI Bank Ltd."
+      "name": "ICICI Bank Ltd.",
+      "lastClose": 4305.61
     },
     {
       "symbol": "HINDUNILVR",
-      "name": "Hindustan Unilever Ltd."
+      "name": "Hindustan Unilever Ltd.",
+      "lastClose": 1355.63
     },
     {
       "symbol": "SBIN",
-      "name": "State Bank of India"
+      "name": "State Bank of India",
+      "lastClose": 2201.85
     },
     {
       "symbol": "BHARTIARTL",
-      "name": "Bharti Airtel Ltd."
+      "name": "Bharti Airtel Ltd.",
+      "lastClose": 4168.67
     },
     {
       "symbol": "ITC",
-      "name": "ITC Ltd."
+      "name": "ITC Ltd.",
+      "lastClose": 2121.12
     },
     {
       "symbol": "KOTAKBANK",
-      "name": "Kotak Mahindra Bank Ltd."
+      "name": "Kotak Mahindra Bank Ltd.",
+      "lastClose": 1348.84
     },
     {
       "symbol": "LT",
-      "name": "Larsen & Toubro Ltd."
+      "name": "Larsen & Toubro Ltd.",
+      "lastClose": 1154.9
     },
     {
       "symbol": "AXISBANK",
-      "name": "Axis Bank Ltd."
+      "name": "Axis Bank Ltd.",
+      "lastClose": 3987.47
     },
     {
       "symbol": "HCLTECH",
-      "name": "HCL Technologies Ltd."
+      "name": "HCL Technologies Ltd.",
+      "lastClose": 3659.88
     },
     {
       "symbol": "MARUTI",
-      "name": "Maruti Suzuki India Ltd."
+      "name": "Maruti Suzuki India Ltd.",
+      "lastClose": 2552.41
     },
     {
       "symbol": "BAJFINANCE",
-      "name": "Bajaj Finance Ltd."
+      "name": "Bajaj Finance Ltd.",
+      "lastClose": 1412.07
     },
     {
       "symbol": "ASIANPAINT",
-      "name": "Asian Paints Ltd."
+      "name": "Asian Paints Ltd.",
+      "lastClose": 149.87
     },
     {
       "symbol": "SUNPHARMA",
-      "name": "Sun Pharmaceutical Industries Ltd."
+      "name": "Sun Pharmaceutical Industries Ltd.",
+      "lastClose": 1658.25
     },
     {
       "symbol": "TITAN",
-      "name": "Titan Company Ltd."
+      "name": "Titan Company Ltd.",
+      "lastClose": 3409.51
     },
     {
       "symbol": "ULTRACEMCO",
-      "name": "UltraTech Cement Ltd."
+      "name": "UltraTech Cement Ltd.",
+      "lastClose": 1905.31
     },
     {
       "symbol": "WIPRO",
-      "name": "Wipro Ltd."
+      "name": "Wipro Ltd.",
+      "lastClose": 2896.78
     },
     {
       "symbol": "BAJAJFINSV",
-      "name": "Bajaj Finserv Ltd."
+      "name": "Bajaj Finserv Ltd.",
+      "lastClose": 4263.06
     },
     {
       "symbol": "POWERGRID",
-      "name": "Power Grid Corporation of India Ltd."
+      "name": "Power Grid Corporation of India Ltd.",
+      "lastClose": 3241.45
     },
     {
       "symbol": "NTPC",
-      "name": "NTPC Ltd."
+      "name": "NTPC Ltd.",
+      "lastClose": 1622.39
     },
     {
       "symbol": "ONGC",
-      "name": "Oil & Natural Gas Corporation Ltd."
+      "name": "Oil & Natural Gas Corporation Ltd.",
+      "lastClose": 3587.24
     },
     {
       "symbol": "TATAMOTORS",
-      "name": "Tata Motors Ltd."
+      "name": "Tata Motors Ltd.",
+      "lastClose": 484.61
     },
     {
       "symbol": "ADANIENT",
-      "name": "Adani Enterprises Ltd."
+      "name": "Adani Enterprises Ltd.",
+      "lastClose": 4962
     },
     {
       "symbol": "JSWSTEEL",
-      "name": "JSW Steel Ltd."
+      "name": "JSW Steel Ltd.",
+      "lastClose": 2546.84
     },
     {
       "symbol": "TECHM",
-      "name": "Tech Mahindra Ltd."
+      "name": "Tech Mahindra Ltd.",
+      "lastClose": 2465.32
     },
     {
       "symbol": "HDFCLIFE",
-      "name": "HDFC Life Insurance Company Ltd."
+      "name": "HDFC Life Insurance Company Ltd.",
+      "lastClose": 2135.83
     },
     {
       "symbol": "DIVISLAB",
-      "name": "Divi's Laboratories Ltd."
+      "name": "Divi's Laboratories Ltd.",
+      "lastClose": 3047.34
     },
     {
       "symbol": "TATASTEEL",
-      "name": "Tata Steel Ltd."
+      "name": "Tata Steel Ltd.",
+      "lastClose": 3615.91
     },
     {
       "symbol": "GRASIM",
-      "name": "Grasim Industries Ltd."
+      "name": "Grasim Industries Ltd.",
+      "lastClose": 4374.9
     },
     {
       "symbol": "DRREDDY",
-      "name": "Dr. Reddy's Laboratories Ltd."
+      "name": "Dr. Reddy's Laboratories Ltd.",
+      "lastClose": 373.84
     },
     {
       "symbol": "BPCL",
-      "name": "Bharat Petroleum Corporation Ltd."
+      "name": "Bharat Petroleum Corporation Ltd.",
+      "lastClose": 3409.09
     },
     {
       "symbol": "BRITANNIA",
-      "name": "Britannia Industries Ltd."
+      "name": "Britannia Industries Ltd.",
+      "lastClose": 825.16
     },
     {
       "symbol": "CIPLA",
-      "name": "Cipla Ltd."
+      "name": "Cipla Ltd.",
+      "lastClose": 3204.95
     },
     {
       "symbol": "EICHERMOT",
-      "name": "Eicher Motors Ltd."
+      "name": "Eicher Motors Ltd.",
+      "lastClose": 1388.85
     },
     {
       "symbol": "HEROMOTOCO",
-      "name": "Hero MotoCorp Ltd."
+      "name": "Hero MotoCorp Ltd.",
+      "lastClose": 2120.11
     },
     {
       "symbol": "INDUSINDBK",
-      "name": "IndusInd Bank Ltd."
+      "name": "IndusInd Bank Ltd.",
+      "lastClose": 4367.83
     },
     {
       "symbol": "SHREECEM",
-      "name": "Shree Cement Ltd."
+      "name": "Shree Cement Ltd.",
+      "lastClose": 4039.02
     },
     {
       "symbol": "HDFCAMC",
-      "name": "HDFC Asset Management Company Ltd."
+      "name": "HDFC Asset Management Company Ltd.",
+      "lastClose": 4727.57
     },
     {
       "symbol": "SBILIFE",
-      "name": "SBI Life Insurance Company Ltd."
+      "name": "SBI Life Insurance Company Ltd.",
+      "lastClose": 3584.43
     },
     {
       "symbol": "BAJAJ-AUTO",
-      "name": "Bajaj Auto Ltd."
+      "name": "Bajaj Auto Ltd.",
+      "lastClose": 4191.24
     },
     {
       "symbol": "M&M",
-      "name": "Mahindra & Mahindra Ltd."
+      "name": "Mahindra & Mahindra Ltd.",
+      "lastClose": 1255.69
     },
     {
       "symbol": "GAIL",
-      "name": "GAIL (India) Ltd."
+      "name": "GAIL (India) Ltd.",
+      "lastClose": 1324.66
     },
     {
       "symbol": "IOC",
-      "name": "Indian Oil Corporation Ltd."
+      "name": "Indian Oil Corporation Ltd.",
+      "lastClose": 1631.04
     },
     {
       "symbol": "COALINDIA",
-      "name": "Coal India Ltd."
+      "name": "Coal India Ltd.",
+      "lastClose": 2784.93
     },
     {
       "symbol": "PIDILITIND",
-      "name": "Pidilite Industries Ltd."
+      "name": "Pidilite Industries Ltd.",
+      "lastClose": 2627.3
     },
     {
       "symbol": "DABUR",
-      "name": "Dabur India Ltd."
+      "name": "Dabur India Ltd.",
+      "lastClose": 1881.46
     },
     {
       "symbol": "ADANIPORTS",
-      "name": "Adani Ports and Special Economic Zone Ltd."
+      "name": "Adani Ports and Special Economic Zone Ltd.",
+      "lastClose": 2067.68
     },
     {
       "symbol": "HAVELLS",
-      "name": "Havells India Ltd."
+      "name": "Havells India Ltd.",
+      "lastClose": 4139.8
     },
     {
       "symbol": "AMBUJACEM",
-      "name": "Ambuja Cements Ltd."
+      "name": "Ambuja Cements Ltd.",
+      "lastClose": 2271.22
     },
     {
       "symbol": "TATAPOWER",
-      "name": "Tata Power Company Ltd."
+      "name": "Tata Power Company Ltd.",
+      "lastClose": 4779.01
     },
     {
       "symbol": "UPL",
-      "name": "UPL Ltd."
+      "name": "UPL Ltd.",
+      "lastClose": 2739.9
     },
     {
       "symbol": "NESTLEIND",
-      "name": "Nestle India Ltd."
+      "name": "Nestle India Ltd.",
+      "lastClose": 4771.42
     },
     {
       "symbol": "SIEMENS",
-      "name": "Siemens Ltd."
+      "name": "Siemens Ltd.",
+      "lastClose": 3875.31
     },
     {
       "symbol": "APOLLOHOSP",
-      "name": "Apollo Hospitals Enterprise Ltd."
+      "name": "Apollo Hospitals Enterprise Ltd.",
+      "lastClose": 2898.15
     },
     {
       "symbol": "BERGEPAINT",
-      "name": "Berger Paints India Ltd."
+      "name": "Berger Paints India Ltd.",
+      "lastClose": 4006.25
     },
     {
       "symbol": "TATACONSUM",
-      "name": "Tata Consumer Products Ltd."
+      "name": "Tata Consumer Products Ltd.",
+      "lastClose": 3130.12
     },
     {
       "symbol": "MARICO",
-      "name": "Marico Ltd."
+      "name": "Marico Ltd.",
+      "lastClose": 4415.97
     },
     {
       "symbol": "ICICIPRULI",
-      "name": "ICICI Prudential Life Insurance Company Ltd."
+      "name": "ICICI Prudential Life Insurance Company Ltd.",
+      "lastClose": 495.26
     },
     {
       "symbol": "MUTHOOTFIN",
-      "name": "Muthoot Finance Ltd."
+      "name": "Muthoot Finance Ltd.",
+      "lastClose": 1743.55
     },
     {
       "symbol": "GODREJCP",
-      "name": "Godrej Consumer Products Ltd."
+      "name": "Godrej Consumer Products Ltd.",
+      "lastClose": 1905.33
     },
     {
       "symbol": "SRF",
-      "name": "SRF Ltd."
+      "name": "SRF Ltd.",
+      "lastClose": 995.7
     },
     {
       "symbol": "PAGEIND",
-      "name": "Page Industries Ltd."
+      "name": "Page Industries Ltd.",
+      "lastClose": 1017.78
     },
     {
       "symbol": "BOSCHLTD",
-      "name": "Bosch Ltd."
+      "name": "Bosch Ltd.",
+      "lastClose": 4360.22
     },
     {
       "symbol": "COLPAL",
-      "name": "Colgate Palmolive (India) Ltd."
+      "name": "Colgate Palmolive (India) Ltd.",
+      "lastClose": 1122.37
     },
     {
       "symbol": "DLF",
-      "name": "DLF Ltd."
+      "name": "DLF Ltd.",
+      "lastClose": 3427.04
     },
     {
       "symbol": "AUROPHARMA",
-      "name": "Aurobindo Pharma Ltd."
+      "name": "Aurobindo Pharma Ltd.",
+      "lastClose": 1881.1
     },
     {
       "symbol": "LUPIN",
-      "name": "Lupin Ltd."
+      "name": "Lupin Ltd.",
+      "lastClose": 1464.5
     },
     {
       "symbol": "ICICIGI",
-      "name": "ICICI Lombard General Insurance Company Ltd."
+      "name": "ICICI Lombard General Insurance Company Ltd.",
+      "lastClose": 2699.22
     },
     {
       "symbol": "HINDALCO",
-      "name": "Hindalco Industries Ltd."
+      "name": "Hindalco Industries Ltd.",
+      "lastClose": 2822.31
     },
     {
       "symbol": "TORNTPHARM",
-      "name": "Torrent Pharmaceuticals Ltd."
+      "name": "Torrent Pharmaceuticals Ltd.",
+      "lastClose": 613.07
     },
     {
       "symbol": "PETRONET",
-      "name": "Petronet LNG Ltd."
+      "name": "Petronet LNG Ltd.",
+      "lastClose": 1872.14
     },
     {
       "symbol": "VOLTAS",
-      "name": "Voltas Ltd."
+      "name": "Voltas Ltd.",
+      "lastClose": 4706.14
     },
     {
       "symbol": "MCDOWELL-N",
-      "name": "United Spirits Ltd."
+      "name": "United Spirits Ltd.",
+      "lastClose": 4018.79
     },
     {
       "symbol": "GODREJPROP",
-      "name": "Godrej Properties Ltd."
+      "name": "Godrej Properties Ltd.",
+      "lastClose": 4638.95
     },
     {
       "symbol": "HINDPETRO",
-      "name": "Hindustan Petroleum Corporation Ltd."
+      "name": "Hindustan Petroleum Corporation Ltd.",
+      "lastClose": 2446.48
     },
     {
       "symbol": "SAIL",
-      "name": "Steel Authority of India Ltd."
+      "name": "Steel Authority of India Ltd.",
+      "lastClose": 2053.85
     },
     {
       "symbol": "BANKBARODA",
-      "name": "Bank of Baroda"
+      "name": "Bank of Baroda",
+      "lastClose": 3826.82
     },
     {
       "symbol": "IDFCFIRSTB",
-      "name": "IDFC First Bank Ltd."
+      "name": "IDFC First Bank Ltd.",
+      "lastClose": 844.41
     },
     {
       "symbol": "CANBK",
-      "name": "Canara Bank"
+      "name": "Canara Bank",
+      "lastClose": 1436.91
     },
     {
       "symbol": "BANDHANBNK",
-      "name": "Bandhan Bank Ltd."
+      "name": "Bandhan Bank Ltd.",
+      "lastClose": 1682.46
     },
     {
       "symbol": "PNB",
-      "name": "Punjab National Bank"
+      "name": "Punjab National Bank",
+      "lastClose": 617.34
     },
     {
       "symbol": "FEDERALBNK",
-      "name": "Federal Bank Ltd."
+      "name": "Federal Bank Ltd.",
+      "lastClose": 3041
     },
     {
       "symbol": "INDIGO",
-      "name": "InterGlobe Aviation Ltd."
+      "name": "InterGlobe Aviation Ltd.",
+      "lastClose": 2590.53
     },
     {
       "symbol": "DMART",
-      "name": "Avenue Supermarts Ltd."
+      "name": "Avenue Supermarts Ltd.",
+      "lastClose": 599.09
     },
     {
       "symbol": "BIOCON",
-      "name": "Biocon Ltd."
+      "name": "Biocon Ltd.",
+      "lastClose": 3522.16
     },
     {
       "symbol": "RECLTD",
-      "name": "REC Ltd."
+      "name": "REC Ltd.",
+      "lastClose": 1908.26
     },
     {
       "symbol": "NHPC",
-      "name": "NHPC Ltd."
+      "name": "NHPC Ltd.",
+      "lastClose": 3082.27
     },
     {
       "symbol": "PIIND",
-      "name": "PI Industries Ltd."
+      "name": "PI Industries Ltd.",
+      "lastClose": 328.32
     },
     {
       "symbol": "ABBOTINDIA",
-      "name": "Abbott India Ltd."
+      "name": "Abbott India Ltd.",
+      "lastClose": 778.44
     },
     {
       "symbol": "GLAND",
-      "name": "Gland Pharma Ltd."
+      "name": "Gland Pharma Ltd.",
+      "lastClose": 1605.49
     },
     {
       "symbol": "ALKEM",
-      "name": "Alkem Laboratories Ltd."
+      "name": "Alkem Laboratories Ltd.",
+      "lastClose": 1762.51
     },
     {
       "symbol": "NAVINFLUOR",
-      "name": "Navin Fluorine International Ltd."
+      "name": "Navin Fluorine International Ltd.",
+      "lastClose": 4555.74
     },
     {
       "symbol": "TRENT",
-      "name": "Trent Ltd."
+      "name": "Trent Ltd.",
+      "lastClose": 3449.83
     },
     {
       "symbol": "JUBLFOOD",
-      "name": "Jubilant FoodWorks Ltd."
+      "name": "Jubilant FoodWorks Ltd.",
+      "lastClose": 226.41
     },
     {
       "symbol": "MPHASIS",
-      "name": "Mphasis Ltd."
+      "name": "Mphasis Ltd.",
+      "lastClose": 4229.63
     },
     {
       "symbol": "OBEROIRLTY",
-      "name": "Oberoi Realty Ltd."
+      "name": "Oberoi Realty Ltd.",
+      "lastClose": 629.82
     },
     {
       "symbol": "CONCOR",
-      "name": "Container Corporation of India Ltd."
+      "name": "Container Corporation of India Ltd.",
+      "lastClose": 4736.29
     },
     {
       "symbol": "ATUL",
-      "name": "Atul Ltd."
+      "name": "Atul Ltd.",
+      "lastClose": 2420.44
     },
     {
       "symbol": "AARTIIND",
-      "name": "Aarti Industries Ltd."
+      "name": "Aarti Industries Ltd.",
+      "lastClose": 3696.77
     },
     {
       "symbol": "SUNTV",
-      "name": "Sun TV Network Ltd."
+      "name": "Sun TV Network Ltd.",
+      "lastClose": 4576.43
     },
     {
       "symbol": "MINDTREE",
-      "name": "Mindtree Ltd."
+      "name": "Mindtree Ltd.",
+      "lastClose": 4500.48
     },
     {
       "symbol": "ESCORTS",
-      "name": "Escorts Kubota Ltd."
+      "name": "Escorts Kubota Ltd.",
+      "lastClose": 835.73
     },
     {
       "symbol": "CHOLAFIN",
-      "name": "Cholamandalam Investment and Finance Company Ltd."
+      "name": "Cholamandalam Investment and Finance Company Ltd.",
+      "lastClose": 2599.87
     },
     {
       "symbol": "CROMPTON",
-      "name": "Crompton Greaves Consumer Electricals Ltd."
+      "name": "Crompton Greaves Consumer Electricals Ltd.",
+      "lastClose": 3909.76
     },
     {
       "symbol": "DEEPAKNTR",
-      "name": "Deepak Nitrite Ltd."
+      "name": "Deepak Nitrite Ltd.",
+      "lastClose": 4382.51
     },
     {
       "symbol": "POLYCAB",
-      "name": "Polycab India Ltd."
+      "name": "Polycab India Ltd.",
+      "lastClose": 591.42
     },
     {
       "symbol": "INDIAMART",
-      "name": "IndiaMART InterMESH Ltd."
+      "name": "IndiaMART InterMESH Ltd.",
+      "lastClose": 4075.24
     },
     {
       "symbol": "METROPOLIS",
-      "name": "Metropolis Healthcare Ltd."
+      "name": "Metropolis Healthcare Ltd.",
+      "lastClose": 3149.08
     },
     {
       "symbol": "LALPATHLAB",
-      "name": "Dr. Lal PathLabs Ltd."
+      "name": "Dr. Lal PathLabs Ltd.",
+      "lastClose": 3893.83
     },
     {
       "symbol": "ICICISENS",
-      "name": "ICICI Securities Ltd."
+      "name": "ICICI Securities Ltd.",
+      "lastClose": 3499.84
     },
     {
       "symbol": "HONAUT",
-      "name": "Honeywell Automation India Ltd."
+      "name": "Honeywell Automation India Ltd.",
+      "lastClose": 3447.4
     },
     {
       "symbol": "BALKRISIND",
-      "name": "Balkrishna Industries Ltd."
+      "name": "Balkrishna Industries Ltd.",
+      "lastClose": 1066.28
     },
     {
       "symbol": "GUJGASLTD",
-      "name": "Gujarat Gas Ltd."
+      "name": "Gujarat Gas Ltd.",
+      "lastClose": 4965.35
     },
     {
       "symbol": "MOTILALOFS",
-      "name": "Motilal Oswal Financial Services Ltd."
+      "name": "Motilal Oswal Financial Services Ltd.",
+      "lastClose": 4595.51
     },
     {
       "symbol": "TATACHEM",
-      "name": "Tata Chemicals Ltd."
+      "name": "Tata Chemicals Ltd.",
+      "lastClose": 1053.59
     },
     {
       "symbol": "RAJESHEXPO",
-      "name": "Rajesh Exports Ltd."
+      "name": "Rajesh Exports Ltd.",
+      "lastClose": 240.01
     },
     {
       "symbol": "RAMCOCEM",
-      "name": "The Ramco Cements Ltd."
+      "name": "The Ramco Cements Ltd.",
+      "lastClose": 3093
     },
     {
       "symbol": "PFIZER",
-      "name": "Pfizer Ltd."
+      "name": "Pfizer Ltd.",
+      "lastClose": 1498.52
     },
     {
       "symbol": "SYNGENE",
-      "name": "Syngene International Ltd."
+      "name": "Syngene International Ltd.",
+      "lastClose": 2400.91
     },
     {
       "symbol": "AUBANK",
-      "name": "AU Small Finance Bank Ltd."
+      "name": "AU Small Finance Bank Ltd.",
+      "lastClose": 2778.12
     },
     {
       "symbol": "IDBI",
-      "name": "IDBI Bank Ltd."
+      "name": "IDBI Bank Ltd.",
+      "lastClose": 4311.89
     },
     {
       "symbol": "TATACOMM",
-      "name": "Tata Communications Ltd."
+      "name": "Tata Communications Ltd.",
+      "lastClose": 2410.53
     },
     {
       "symbol": "GMRINFRA",
-      "name": "GMR Airports Infrastructure Ltd."
+      "name": "GMR Airports Infrastructure Ltd.",
+      "lastClose": 216.59
     },
     {
       "symbol": "IRCTC",
-      "name": "Indian Railway Catering & Tourism Corporation Ltd."
+      "name": "Indian Railway Catering & Tourism Corporation Ltd.",
+      "lastClose": 2082.19
     },
     {
       "symbol": "BATAINDIA",
-      "name": "Bata India Ltd."
+      "name": "Bata India Ltd.",
+      "lastClose": 2321.03
     },
     {
       "symbol": "LICHSGFIN",
-      "name": "LIC Housing Finance Ltd."
+      "name": "LIC Housing Finance Ltd.",
+      "lastClose": 869.31
     },
     {
       "symbol": "SRTRANSFIN",
-      "name": "Shriram Transport Finance Company Ltd."
+      "name": "Shriram Transport Finance Company Ltd.",
+      "lastClose": 2198.43
     },
     {
       "symbol": "TVSMOTOR",
-      "name": "TVS Motor Company Ltd."
+      "name": "TVS Motor Company Ltd.",
+      "lastClose": 184.05
     },
     {
       "symbol": "HINDCOPPER",
-      "name": "Hindustan Copper Ltd."
+      "name": "Hindustan Copper Ltd.",
+      "lastClose": 3031.82
     },
     {
       "symbol": "JINDALSTEL",
-      "name": "Jindal Steel & Power Ltd."
+      "name": "Jindal Steel & Power Ltd.",
+      "lastClose": 1238.8
     },
     {
       "symbol": "NMDC",
-      "name": "NMDC Ltd."
+      "name": "NMDC Ltd.",
+      "lastClose": 785.04
     },
     {
       "symbol": "APLLTD",
-      "name": "Alembic Pharmaceuticals Ltd."
+      "name": "Alembic Pharmaceuticals Ltd.",
+      "lastClose": 2918.89
     },
     {
       "symbol": "GLENMARK",
-      "name": "Glenmark Pharmaceuticals Ltd."
+      "name": "Glenmark Pharmaceuticals Ltd.",
+      "lastClose": 229.49
     },
     {
       "symbol": "CANFINHOME",
-      "name": "Can Fin Homes Ltd."
+      "name": "Can Fin Homes Ltd.",
+      "lastClose": 2239.54
     },
     {
       "symbol": "SUNDRMFAST",
-      "name": "Sundram Fasteners Ltd."
+      "name": "Sundram Fasteners Ltd.",
+      "lastClose": 2698.44
     },
     {
       "symbol": "CESC",
-      "name": "CESC Ltd."
+      "name": "CESC Ltd.",
+      "lastClose": 1602.57
     },
     {
       "symbol": "FINCABLES",
-      "name": "Finolex Cables Ltd."
+      "name": "Finolex Cables Ltd.",
+      "lastClose": 3474.79
     },
     {
       "symbol": "JUBLINGREA",
-      "name": "Jubilant Ingrevia Ltd."
+      "name": "Jubilant Ingrevia Ltd.",
+      "lastClose": 329.82
     },
     {
       "symbol": "BEML",
-      "name": "BEML Ltd."
+      "name": "BEML Ltd.",
+      "lastClose": 2539.18
     },
     {
       "symbol": "VGUARD",
-      "name": "V-Guard Industries Ltd."
+      "name": "V-Guard Industries Ltd.",
+      "lastClose": 2881.53
     },
     {
       "symbol": "SJVN",
-      "name": "SJVN Ltd."
+      "name": "SJVN Ltd.",
+      "lastClose": 3333.1
     },
     {
       "symbol": "IRFC",
-      "name": "Indian Railway Finance Corporation Ltd."
+      "name": "Indian Railway Finance Corporation Ltd.",
+      "lastClose": 4813.92
     },
     {
       "symbol": "NH",
-      "name": "Narayana Hrudayalaya Ltd."
+      "name": "Narayana Hrudayalaya Ltd.",
+      "lastClose": 3230.84
     },
     {
       "symbol": "RBLBANK",
-      "name": "RBL Bank Ltd."
+      "name": "RBL Bank Ltd.",
+      "lastClose": 1523.12
     },
     {
       "symbol": "CAMS",
-      "name": "Computer Age Management Services Ltd."
+      "name": "Computer Age Management Services Ltd.",
+      "lastClose": 4493.02
     },
     {
       "symbol": "POLYMED",
-      "name": "Poly Medicure Ltd."
+      "name": "Poly Medicure Ltd.",
+      "lastClose": 4994.75
     },
     {
       "symbol": "ASTRAL",
-      "name": "Astral Ltd."
+      "name": "Astral Ltd.",
+      "lastClose": 1207.28
     },
     {
       "symbol": "GRANULES",
-      "name": "Granules India Ltd."
+      "name": "Granules India Ltd.",
+      "lastClose": 4430.95
     },
     {
       "symbol": "MGL",
-      "name": "Mahanagar Gas Ltd."
+      "name": "Mahanagar Gas Ltd.",
+      "lastClose": 893.8
     },
     {
       "symbol": "AIAENG",
-      "name": "AIA Engineering Ltd."
+      "name": "AIA Engineering Ltd.",
+      "lastClose": 2218.02
     },
     {
       "symbol": "GODREJIND",
-      "name": "Godrej Industries Ltd."
+      "name": "Godrej Industries Ltd.",
+      "lastClose": 2281.7
     },
     {
       "symbol": "INDHOTEL",
-      "name": "The Indian Hotels Company Ltd."
+      "name": "The Indian Hotels Company Ltd.",
+      "lastClose": 1730.92
     },
     {
       "symbol": "SOBHA",
-      "name": "Sobha Ltd."
+      "name": "Sobha Ltd.",
+      "lastClose": 722.89
     },
     {
       "symbol": "BLUEDART",
-      "name": "Blue Dart Express Ltd."
+      "name": "Blue Dart Express Ltd.",
+      "lastClose": 1383.72
     },
     {
       "symbol": "PVRINOX",
-      "name": "PVR INOX Ltd."
+      "name": "PVR INOX Ltd.",
+      "lastClose": 3526.75
     },
     {
       "symbol": "TATAMTRDVR",
-      "name": "Tata Motors DVR"
+      "name": "Tata Motors DVR",
+      "lastClose": 2515.03
     },
     {
       "symbol": "JSL",
-      "name": "Jindal Stainless Ltd."
+      "name": "Jindal Stainless Ltd.",
+      "lastClose": 2278.08
     },
     {
       "symbol": "TRIDENT",
-      "name": "Trident Ltd."
+      "name": "Trident Ltd.",
+      "lastClose": 4080.29
     },
     {
       "symbol": "CENTURYTEX",
-      "name": "Century Textiles & Industries Ltd."
+      "name": "Century Textiles & Industries Ltd.",
+      "lastClose": 3338.93
     },
     {
       "symbol": "BHEL",
-      "name": "Bharat Heavy Electricals Ltd."
+      "name": "Bharat Heavy Electricals Ltd.",
+      "lastClose": 2142.45
     },
     {
       "symbol": "IDFC",
-      "name": "IDFC Ltd."
+      "name": "IDFC Ltd.",
+      "lastClose": 4720.35
     },
     {
       "symbol": "SUNDARMFIN",
-      "name": "Sundaram Finance Ltd."
+      "name": "Sundaram Finance Ltd.",
+      "lastClose": 1114.82
     },
     {
       "symbol": "GODFRYPHLP",
-      "name": "Godfrey Phillips India Ltd."
+      "name": "Godfrey Phillips India Ltd.",
+      "lastClose": 3117.5
     },
     {
       "symbol": "CUMMINSIND",
-      "name": "Cummins India Ltd."
+      "name": "Cummins India Ltd.",
+      "lastClose": 985.01
     },
     {
       "symbol": "COROMANDEL",
-      "name": "Coromandel International Ltd."
+      "name": "Coromandel International Ltd.",
+      "lastClose": 3869.36
     },
     {
       "symbol": "SUPREMEIND",
-      "name": "Supreme Industries Ltd."
+      "name": "Supreme Industries Ltd.",
+      "lastClose": 4547.23
     },
     {
       "symbol": "SCHAEFFLER",
-      "name": "Schaeffler India Ltd."
+      "name": "Schaeffler India Ltd.",
+      "lastClose": 799.57
     },
     {
       "symbol": "THERMAX",
-      "name": "Thermax Ltd."
+      "name": "Thermax Ltd.",
+      "lastClose": 3932.75
     },
     {
       "symbol": "ABB",
-      "name": "ABB India Ltd."
+      "name": "ABB India Ltd.",
+      "lastClose": 2170.39
     },
     {
       "symbol": "HATSUN",
-      "name": "Hatsun Agro Product Ltd."
+      "name": "Hatsun Agro Product Ltd.",
+      "lastClose": 502.52
     },
     {
       "symbol": "KEI",
-      "name": "KEI Industries Ltd."
+      "name": "KEI Industries Ltd.",
+      "lastClose": 4034.7
     },
     {
       "symbol": "GILLETTE",
-      "name": "Gillette India Ltd."
+      "name": "Gillette India Ltd.",
+      "lastClose": 908.13
     },
     {
       "symbol": "SKFINDIA",
-      "name": "SKF India Ltd."
+      "name": "SKF India Ltd.",
+      "lastClose": 4804.13
     },
     {
       "symbol": "MAHLOG",
-      "name": "Mahindra Logistics Ltd."
+      "name": "Mahindra Logistics Ltd.",
+      "lastClose": 2973.12
     },
     {
       "symbol": "SPARC",
-      "name": "Sun Pharma Advanced Research Company Ltd."
+      "name": "Sun Pharma Advanced Research Company Ltd.",
+      "lastClose": 2582.07
     },
     {
       "symbol": "JBCHEPHARM",
-      "name": "JB Chemicals & Pharmaceuticals Ltd."
+      "name": "JB Chemicals & Pharmaceuticals Ltd.",
+      "lastClose": 3094.46
     },
     {
       "symbol": "SFL",
-      "name": "Sundaram Finance Holdings Ltd."
+      "name": "Sundaram Finance Holdings Ltd.",
+      "lastClose": 1287.8
     },
     {
       "symbol": "TASTYBITE",
-      "name": "Tasty Bite Eatables Ltd."
+      "name": "Tasty Bite Eatables Ltd.",
+      "lastClose": 2784.44
     },
     {
       "symbol": "MAHSCOOTER",
-      "name": "Maharashtra Scooters Ltd."
+      "name": "Maharashtra Scooters Ltd.",
+      "lastClose": 4558.11
     },
     {
       "symbol": "EIDPARRY",
-      "name": "EID Parry India Ltd."
+      "name": "EID Parry India Ltd.",
+      "lastClose": 2602.04
     },
     {
       "symbol": "KPRMILL",
-      "name": "K.P.R. Mill Ltd."
+      "name": "K.P.R. Mill Ltd.",
+      "lastClose": 3070.45
     },
     {
       "symbol": "SIS",
-      "name": "SIS Ltd."
+      "name": "SIS Ltd.",
+      "lastClose": 804.57
     },
     {
       "symbol": "JYOTHYLAB",
-      "name": "Jyothy Labs Ltd."
+      "name": "Jyothy Labs Ltd.",
+      "lastClose": 3393.1
     },
     {
       "symbol": "VSTIND",
-      "name": "VST Industries Ltd."
+      "name": "VST Industries Ltd.",
+      "lastClose": 4451.76
     },
     {
       "symbol": "TTKPRESTIG",
-      "name": "TTK Prestige Ltd."
+      "name": "TTK Prestige Ltd.",
+      "lastClose": 1939.98
     },
     {
       "symbol": "IFBIND",
-      "name": "IFB Industries Ltd."
+      "name": "IFB Industries Ltd.",
+      "lastClose": 3579.9
     },
     {
       "symbol": "PGHH",
-      "name": "Procter & Gamble Hygiene & Health Care Ltd."
+      "name": "Procter & Gamble Hygiene & Health Care Ltd.",
+      "lastClose": 3072.4
     },
     {
       "symbol": "TITAGARH",
-      "name": "Titagarh Rail Systems Ltd."
+      "name": "Titagarh Rail Systems Ltd.",
+      "lastClose": 2851.71
     },
     {
       "symbol": "SANDHAR",
-      "name": "Sandhar Technologies Ltd."
+      "name": "Sandhar Technologies Ltd.",
+      "lastClose": 1752.85
     },
     {
       "symbol": "KALPATPOWR",
-      "name": "Kalpataru Power Transmission Ltd."
+      "name": "Kalpataru Power Transmission Ltd.",
+      "lastClose": 4722.73
     },
     {
       "symbol": "HIKAL",
-      "name": "Hikal Ltd."
+      "name": "Hikal Ltd.",
+      "lastClose": 4768.48
     },
     {
       "symbol": "RATNAMANI",
-      "name": "Ratnamani Metals & Tubes Ltd."
+      "name": "Ratnamani Metals & Tubes Ltd.",
+      "lastClose": 3946.98
     },
     {
       "symbol": "NATIONALUM",
-      "name": "National Aluminium Company Ltd."
+      "name": "National Aluminium Company Ltd.",
+      "lastClose": 3759.61
     },
     {
       "symbol": "TATAELXSI",
-      "name": "Tata Elxsi Ltd."
+      "name": "Tata Elxsi Ltd.",
+      "lastClose": 2024.96
     },
     {
       "symbol": "AAVAS",
-      "name": "Aavas Financiers Ltd."
+      "name": "Aavas Financiers Ltd.",
+      "lastClose": 2538.38
     },
     {
       "symbol": "CLEAN",
-      "name": "Clean Science and Technology Ltd."
+      "name": "Clean Science and Technology Ltd.",
+      "lastClose": 910.91
     },
     {
       "symbol": "ROUTE",
-      "name": "Route Mobile Ltd."
+      "name": "Route Mobile Ltd.",
+      "lastClose": 529.15
     },
     {
       "symbol": "CREDITACC",
-      "name": "CreditAccess Grameen Ltd."
+      "name": "CreditAccess Grameen Ltd.",
+      "lastClose": 2175.93
     },
     {
       "symbol": "KIMS",
-      "name": "Krishna Institute of Medical Sciences Ltd."
+      "name": "Krishna Institute of Medical Sciences Ltd.",
+      "lastClose": 2113.46
     },
     {
       "symbol": "TATVA",
-      "name": "Tatva Chintan Pharma Chem Ltd."
+      "name": "Tatva Chintan Pharma Chem Ltd.",
+      "lastClose": 1098.27
     },
     {
       "symbol": "GLS",
-      "name": "Glenmark Life Sciences Ltd."
+      "name": "Glenmark Life Sciences Ltd.",
+      "lastClose": 713.81
     },
     {
       "symbol": "CHEMPLASTS",
-      "name": "Chemplast Sanmar Ltd."
+      "name": "Chemplast Sanmar Ltd.",
+      "lastClose": 4793.08
     },
     {
       "symbol": "DEVYANI",
-      "name": "Devyani International Ltd."
+      "name": "Devyani International Ltd.",
+      "lastClose": 3852.73
     },
     {
       "symbol": "EXIDEIND",
-      "name": "Exide Industries Ltd."
+      "name": "Exide Industries Ltd.",
+      "lastClose": 1046.7
     },
     {
       "symbol": "AMARAJABAT",
-      "name": "Amara Raja Energy & Mobility Ltd."
+      "name": "Amara Raja Energy & Mobility Ltd.",
+      "lastClose": 442.95
     },
     {
       "symbol": "MRF",
-      "name": "MRF Ltd."
+      "name": "MRF Ltd.",
+      "lastClose": 1300.56
     },
     {
       "symbol": "APARINDS",
-      "name": "Apar Industries Ltd."
+      "name": "Apar Industries Ltd.",
+      "lastClose": 4139.11
     },
     {
       "symbol": "BASF",
-      "name": "BASF India Ltd."
+      "name": "BASF India Ltd.",
+      "lastClose": 2558.49
     },
     {
       "symbol": "CASTROLIND",
-      "name": "Castrol India Ltd."
+      "name": "Castrol India Ltd.",
+      "lastClose": 2243.7
     },
     {
       "symbol": "FINOLEXIND",
-      "name": "Finolex Industries Ltd."
+      "name": "Finolex Industries Ltd.",
+      "lastClose": 3934.54
     },
     {
       "symbol": "GODREJAGRO",
-      "name": "Godrej Agrovet Ltd."
+      "name": "Godrej Agrovet Ltd.",
+      "lastClose": 3936.51
     },
     {
       "symbol": "HGS",
-      "name": "Hinduja Global Solutions Ltd."
+      "name": "Hinduja Global Solutions Ltd.",
+      "lastClose": 3547.13
     },
     {
       "symbol": "JINDALSAW",
-      "name": "Jindal Saw Ltd."
+      "name": "Jindal Saw Ltd.",
+      "lastClose": 2730.54
     },
     {
       "symbol": "KNRCON",
-      "name": "KNR Constructions Ltd."
+      "name": "KNR Constructions Ltd.",
+      "lastClose": 1502.27
     },
     {
       "symbol": "MAHSEAMLES",
-      "name": "Maharashtra Seamless Ltd."
+      "name": "Maharashtra Seamless Ltd.",
+      "lastClose": 1644.38
     },
     {
       "symbol": "NCC",
-      "name": "NCC Ltd."
+      "name": "NCC Ltd.",
+      "lastClose": 1517.13
     },
     {
       "symbol": "ORIENTELEC",
-      "name": "Orient Electric Ltd."
+      "name": "Orient Electric Ltd.",
+      "lastClose": 4650.81
     },
     {
       "symbol": "PERSISTENT",
-      "name": "Persistent Systems Ltd."
+      "name": "Persistent Systems Ltd.",
+      "lastClose": 308.75
     },
     {
       "symbol": "RALLIS",
-      "name": "Rallis India Ltd."
+      "name": "Rallis India Ltd.",
+      "lastClose": 1531
     },
     {
       "symbol": "SWSOLAR",
-      "name": "Sterling and Wilson Renewable Energy Ltd."
+      "name": "Sterling and Wilson Renewable Energy Ltd.",
+      "lastClose": 3681.62
     },
     {
       "symbol": "TATAINVEST",
-      "name": "Tata Investment Corporation Ltd."
+      "name": "Tata Investment Corporation Ltd.",
+      "lastClose": 1101.38
     },
     {
       "symbol": "UCOBANK",
-      "name": "UCO Bank"
+      "name": "UCO Bank",
+      "lastClose": 1260.39
     },
     {
       "symbol": "VAKRANGEE",
-      "name": "Vakrangee Ltd."
+      "name": "Vakrangee Ltd.",
+      "lastClose": 327.19
     },
     {
       "symbol": "WELCORP",
-      "name": "Welspun Corp Ltd."
+      "name": "Welspun Corp Ltd.",
+      "lastClose": 2336.66
     },
     {
       "symbol": "ZYDUSLIFE",
-      "name": "Zydus Lifesciences Ltd."
+      "name": "Zydus Lifesciences Ltd.",
+      "lastClose": 687.57
     }
   ],
   "watchlists": [],

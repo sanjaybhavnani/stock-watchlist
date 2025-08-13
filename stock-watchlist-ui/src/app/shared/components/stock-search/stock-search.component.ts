@@ -1,25 +1,17 @@
-import { AsyncPipe } from '@angular/common';
-import { Component, inject, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, inject, OnDestroy, OnInit, Output } from '@angular/core';
 import {
   FormBuilder,
-  FormControl,
-  FormGroup,
-  ReactiveFormsModule,
+  ReactiveFormsModule
 } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {
   debounceTime,
-  filter,
-  Observable,
-  of,
   Subject,
-  switchMap,
-  takeUntil,
+  takeUntil
 } from 'rxjs';
-import { StocksService } from '../../services/stocks.service';
-import { Stock } from '../../models/stock.model';
 import { StockSearchStore } from './stock-search.store';
 @Component({
   selector: 'app-stock-search',
@@ -37,6 +29,9 @@ export class StockSearchComponent implements OnInit, OnDestroy {
   private fb = inject(FormBuilder);
   private destroy$ = new Subject<void>();
   public stockSearchStore = inject(StockSearchStore);
+  
+  @Output()
+  stockSelected = new EventEmitter<string>();
 
   public searchForm = this.fb.group({
     searchText: [''],

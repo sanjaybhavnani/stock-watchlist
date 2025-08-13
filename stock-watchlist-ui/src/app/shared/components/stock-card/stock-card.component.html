@@ -1,0 +1,37 @@
+@if(stock) {
+
+<div class="stock-card">
+  <div class="stock-card-left">
+    <div class="stock-name" [attr.title]="stock.name">{{ stock.name }}</div>
+    <div class="stock-symbol">{{ stock.symbol }} : NSE</div>
+    <div class="last-price">Prev Close: {{ stock.lastClose }}</div>
+  </div>
+  <div class="stock-card-right">
+    <div
+      class="current-price"
+      [ngClass]="{
+        up: lastChange === 'up',
+        down: lastChange === 'down'
+      }"
+    >
+      ₹ {{ latestPrice }}
+    </div>
+    <div
+      class="stock-change"
+      [ngClass]="{
+        up: lastCloseChange === 'up',
+        down: lastCloseChange === 'down'
+      }"
+    >
+      @if(change) {
+      <span class="abs-change">
+        {{ change.percent < 0 ? '' : '+' }}{{ change.absolute }}
+      </span>
+      <span class="percent-change">
+        ({{ change.percent < 0 ? '' : '+' }}{{ change.percent }}%)
+      </span>
+      }
+    </div>
+  </div>
+</div>
+}

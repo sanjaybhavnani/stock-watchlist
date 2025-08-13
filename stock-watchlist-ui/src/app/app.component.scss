@@ -1,6 +1,10 @@
 :host {
-    .app-main {
-        max-width: 1280px;
-        margin: 0 auto;
+  .app-main {
+    margin: 0 auto;
+    padding: 1rem;
+
+    @media (min-width: 481px) {
+      max-width: 480px;
     }
+  }
 }

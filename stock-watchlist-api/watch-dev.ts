@@ -23,7 +23,7 @@ function startServer() {
     console.log("✅ Type check passed. Starting Server\n");
 
     // Start new server
-    server = spawn("npx", ["tsx", "src/index.ts"], {
+    server = spawn("npx", ["tsx", "--inspect=9229", "src/index.ts"], {
       stdio: "inherit",
       shell: true, // Required for Windows (.cmd support)
     });

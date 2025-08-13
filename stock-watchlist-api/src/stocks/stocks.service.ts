@@ -1,5 +1,6 @@
-import { Low } from "lowdb";
-import { getDb, StockWatchListDb } from "../data/db";
+import { Low } from 'lowdb';
+import { getDb, StockWatchListDb } from '../data/db';
+import { Stock } from '../models/stock';
 
 export class StocksService {
   private static instance: StocksService | null = null;
@@ -15,15 +16,24 @@ export class StocksService {
     return this.instance;
   }
 
-  public async getStocks(searchString: string) {
+  public async getStocks(searchString: string): Promise<Stock[]> {
     searchString = searchString.toLowerCase().trim();
-    await this.db.read();
-    const stocks = this.db.data?.stocks || [];
+    const stocks = await this.readStocks();
 
     return stocks.filter(
       (stock) =>
         stock.name.toLowerCase().includes(searchString) ||
         stock.symbol.toLowerCase().includes(searchString)
     );
+  }
+
+  public async getStock(symbol: string): Promise<Stock | null> {
+    const stocks = await this.readStocks();
+    return stocks.find((stock) => stock.symbol === symbol) || null;
+  }
+
+  private async readStocks(): Promise<Stock[]> {
+    await this.db.read();
+    return this.db.data?.stocks || [];
   }
 }
