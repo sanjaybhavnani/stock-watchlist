@@ -26,9 +26,10 @@ export class StockCardComponent implements OnInit, OnChanges {
   lastChange!: ChangeDir;
   lastCloseChange!: ChangeDir;
   change!: { percent: number; absolute: number };
-
+  showCardRight = false;
   ngOnInit(): void {
     if (this.stock && this.latestPrice) {
+      this.showCardRight = true;
       this.onLatestPrice(this.latestPrice, this.stock.lastClose);
     }
   }
@@ -62,12 +63,14 @@ export class StockCardComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['latestPrice'] && !changes['latestPrice'].firstChange) {
+      this.showCardRight = true;
       this.onLatestPrice(
         this.latestPrice as number,
         changes['latestPrice'].previousValue
       );
     }
     if (changes['stock'] && !changes['stock'].firstChange) {
+      this.showCardRight = false;
       this.onLatestPrice(this.stock?.lastClose as number);
     }
   }

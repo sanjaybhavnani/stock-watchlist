@@ -6,6 +6,7 @@
     <div class="stock-symbol">{{ stock.symbol }} : NSE</div>
     <div class="last-price">Prev Close: {{ stock.lastClose }}</div>
   </div>
+  @if(showCardRight) {
   <div class="stock-card-right">
     <div
       class="current-price"
@@ -33,5 +34,6 @@
       }
     </div>
   </div>
+  }
 </div>
 }

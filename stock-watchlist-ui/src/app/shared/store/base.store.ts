@@ -43,6 +43,8 @@ export abstract class AppBaseStore<T, K> {
   }
 
   protected resetState() {
-    this._stateSignal = signal(this._initialState);
+    this._stateSignal.update(state => ({
+      ...this._initialState
+    }))
   }
 }

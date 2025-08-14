@@ -44,8 +44,10 @@ This section outlines detailed requirements and provides high level UI direction
 - The search box should still be available on the stock detail page.
 
 ### Watchlist page
-
-- The watchlist page shows the list of stocks present in the watchlist. The prices update dynamically
+- User can create a watchlist on this page or select any existing watchlist
+  - For creating a watchlist a pop up opens where user can provide a name and select stocks for the watch list.
+  - once done, the watchlist is saved and user goes to watchlist detail page.
+- The watchlist page shows the list of stocks present in the watchlist. The prices update dynamically+       
 - With every update the page should indicate if the stock went up or down in price since the last update.
 - On this page, user can add a stock to the watchlist and remove a stock from watchlist.
 

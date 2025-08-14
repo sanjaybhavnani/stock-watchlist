@@ -1,4 +1,4 @@
-import { Component, EventEmitter, inject, OnDestroy, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import {
   FormBuilder,
   ReactiveFormsModule
@@ -33,6 +33,9 @@ export class StockSearchComponent implements OnInit, OnDestroy {
   @Output()
   stockSelected = new EventEmitter<string>();
 
+  @Input()
+  clearOnSelect = false;
+
   public searchForm = this.fb.group({
     searchText: [''],
   });
@@ -53,5 +56,10 @@ export class StockSearchComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.destroy$.next();
     this.destroy$.complete();
+  }
+
+  onStockSelected(value: string) {
+    this.stockSelected.emit(value);
+    this.searchForm.controls.searchText.setValue('');
   }
 }

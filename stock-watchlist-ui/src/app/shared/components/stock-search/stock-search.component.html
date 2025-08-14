@@ -8,7 +8,7 @@
     />
     <mat-autocomplete
       #searchOptions="matAutocomplete"
-      (optionSelected)="stockSelected.emit($event.option.value)"
+      (optionSelected)="onStockSelected($event.option.value)"
     >
       @if(stockSearchStore.loading()) {
       <mat-option class="non-selectable-option" disabled
