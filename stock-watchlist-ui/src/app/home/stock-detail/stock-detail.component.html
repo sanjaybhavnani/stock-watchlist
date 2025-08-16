@@ -1,6 +1,12 @@
 @if(stockStore.stock(); as stock) {
-<app-stock-card
-  [stock]="stock"
-  [latestPrice]="(stockPrice$ | async) || stock.lastClose"
-></app-stock-card>
+<div class="stock-container">
+  <app-stock-card
+    [stock]="stock"
+    [watchlists]="watchlistsStore.data()"
+    [latestPrice]="(stockPrice$ | async) || stock.lastClose"
+    (stockAdded)="onStockAdded($event)"
+  ></app-stock-card>
+  
+</div>
+
 }

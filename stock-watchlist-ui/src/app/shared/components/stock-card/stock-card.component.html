@@ -35,6 +35,22 @@
       </span>
       }
     </div>
+    <div>
+      @if(watchlists && watchlists.length > 0) {
+      <button mat-stroked-button type="button" [matMenuTriggerFor]="menu">
+        <span>Add to Watchlist</span>
+        <mat-icon fontIcon="arrow_drop_down"></mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        @for(watchlist of watchlists; track watchlist.id) {
+        <button type="button" mat-menu-item (click)="stockAdded.emit({watchlist, stock})">
+          {{ watchlist.name }}
+        </button>
+        
+        }
+      </mat-menu>
+      }
+    </div>
   </div>
   }
 </div>

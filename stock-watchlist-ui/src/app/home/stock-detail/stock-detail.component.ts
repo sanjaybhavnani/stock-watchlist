@@ -1,24 +1,44 @@
 import { Component, effect, inject, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { filter, map, Observable, Subject, takeUntil } from 'rxjs';
+import { filter, map, Observable, Subject, take, takeUntil } from 'rxjs';
 import { StockStore } from './stock.store';
 import { StocksService } from '../../shared/services/stocks.service';
 import { AsyncPipe } from '@angular/common';
 import { StockCardComponent } from '../../shared/components/stock-card/stock-card.component';
+import { WatchlistsStore } from '../../watchlists/watchlists.store';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { WatchlistStore } from '../../watchlists/watchlist-detail/watchlist.store';
+import { Watchlist } from '../../watchlists/watchlist.model';
+import { Stock } from '../../shared/models/stock.model';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-stock-detail',
-  imports: [AsyncPipe, StockCardComponent],
-  providers: [StockStore],
+  imports: [
+    AsyncPipe,
+    StockCardComponent,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatSnackBarModule,
+  ],
+  providers: [StockStore, WatchlistsStore, WatchlistStore],
   templateUrl: './stock-detail.component.html',
   styleUrl: './stock-detail.component.scss',
 })
 export class StockDetailComponent implements OnInit, OnDestroy {
   private activatedRoute = inject(ActivatedRoute);
+  public watchlistsStore = inject(WatchlistsStore);
+  public watchlistStore = inject(WatchlistStore);
+
   public stockStore = inject(StockStore);
   public stockPrice$: Observable<number>;
   private stocksService = inject(StocksService);
   private destroy$ = new Subject<void>();
+  private _snackBar = inject(MatSnackBar);
+
   constructor() {
     this.stockPrice$ = this.stocksService.stocksPrices$.pipe(
       filter((price) => price !== null),
@@ -27,6 +47,7 @@ export class StockDetailComponent implements OnInit, OnDestroy {
       )
     );
     this.subscribeToStockPrice();
+    this.loadWatchlists();
   }
   ngOnInit() {
     this.activatedRoute.params
@@ -49,5 +70,34 @@ export class StockDetailComponent implements OnInit, OnDestroy {
         this.stocksService.subscribeStockPrices([this.stockStore.params()]);
       }
     });
+  }
+
+  private loadWatchlists() {
+    this.watchlistsStore.loadAll();
+  }
+
+  public onStockAdded(evt: { watchlist: Watchlist; stock: Stock }) {
+    const { watchlist, stock } = evt;
+    if (!watchlist.stocks.some((s) => s.symbol === stock.symbol)) {
+      this.watchlistStore.save(
+        {
+          ...watchlist,
+          stocks: [...watchlist.stocks, stock],
+        },
+        watchlist.id as string
+      );
+    }
+
+    this.watchlistStore.saveTracker.callComplete$
+      .pipe(take(1))
+      .subscribe((result) => {
+        if (result.type === 'failed') {
+        } else {
+          this._snackBar.open('Success', 'Dismiss', {
+            verticalPosition: 'top',
+            horizontalPosition: 'end',
+          });
+        }
+      });
   }
 }

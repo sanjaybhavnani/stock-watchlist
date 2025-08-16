@@ -24,9 +24,15 @@ export class WebSocketService {
       }catch(err) {
         console.error('invalid message data', evt.data)
       }
-    }  
+    }
   }
   sendMessage<T extends WebsocketMessage>(msg: T) {
+    if(this.websocket.readyState === 0) {
+      this.websocket.onopen = () => {
+        this.websocket.send(JSON.stringify(msg));
+      };
+      return;
+    }
     this.websocket.send(JSON.stringify(msg));
   }
 

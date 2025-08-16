@@ -1,18 +1,24 @@
 import { NgClass } from '@angular/common';
 import {
   Component,
+  EventEmitter,
   Input,
   OnChanges,
   OnInit,
+  Output,
   SimpleChanges,
 } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { Watchlist } from '../../../watchlists/watchlist.model';
 import { Stock } from '../../models/stock.model';
+import { MatIconModule } from '@angular/material/icon';
 
 type ChangeDir = 'up' | 'down' | 'same';
 
 @Component({
   selector: 'app-stock-card',
-  imports: [NgClass],
+  imports: [NgClass, MatMenuModule, MatButtonModule, MatIconModule],
   templateUrl: './stock-card.component.html',
   styleUrl: './stock-card.component.scss',
 })
@@ -23,10 +29,16 @@ export class StockCardComponent implements OnInit, OnChanges {
   @Input()
   latestPrice!: number;
 
+  @Input()
+  watchlists: Watchlist[] | null = null;
+
+  @Output()
+  stockAdded = new EventEmitter<{watchlist: Watchlist, stock: Stock}>()
+
   lastChange!: ChangeDir;
   lastCloseChange!: ChangeDir;
   change!: { percent: number; absolute: number };
-  showCardRight = false;
+  showCardRight = false;  
   ngOnInit(): void {
     if (this.stock && this.latestPrice) {
       this.showCardRight = true;
