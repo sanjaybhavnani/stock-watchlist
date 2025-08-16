@@ -1,5 +1,6 @@
 import { computed, signal, WritableSignal } from '@angular/core';
 import { LoadingStatus, StoreState } from './store.model';
+import { APICallTracker } from './api-call';
 
 export abstract class AppBaseStore<T, K> {
   protected _stateSignal: WritableSignal<StoreState<T, K>>;
@@ -8,43 +9,29 @@ export abstract class AppBaseStore<T, K> {
     this._initialState = {
       data,
       params,
-      errorMessage: '',
-      status: LoadingStatus.Idle,
     };
     this._stateSignal = signal(this._initialState);
   }
 
   params = computed(() => this._stateSignal().params);
   data = computed(() => this._stateSignal().data);
-  errorMessage = computed(() => this._stateSignal().errorMessage);
-  loading = computed(
-    () => this._stateSignal().status === LoadingStatus.Loading
-  );
+
+  getTracker = new APICallTracker();
+  saveTracker = new APICallTracker();
+
   noResults = computed(() => {
-    const isComplete = this._stateSignal().status == LoadingStatus.Complete;
+    const isRunning = this.getTracker.isRunning();
     const data = this._stateSignal().data;
     if (Array.isArray(data)) {
-      return isComplete && data.length == 0;
+      return !isRunning && data.length == 0;
     } else {
-      return isComplete && data !== null;
+      return !isRunning && data === null;
     }
   });
 
-  protected updateError(errorMessage: string) {
-    this._stateSignal.update((state) => ({ ...state, errorMessage }));
-  }
-
-  protected startLoading() {
-    this._stateSignal.update(state => ({...state, status: LoadingStatus.Loading}));
-  }
-
-  protected completeLoading() {
-    this._stateSignal.update(state => ({...state, status: LoadingStatus.Complete}));
-  }
-
   protected resetState() {
-    this._stateSignal.update(state => ({
-      ...this._initialState
-    }))
+    this._stateSignal.update((state) => ({
+      ...this._initialState,
+    }));
   }
 }

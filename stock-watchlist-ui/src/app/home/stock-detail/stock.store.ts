@@ -24,18 +24,15 @@ export class StockStore extends AppBaseStore<Stock | null, string> {
     effect(() => {
       const symbol = this.params();
       if (symbol) {
-        this.startLoading();
+        this.getTracker.start();
         this.stocksService.getStock(symbol).subscribe({
           next: (data) => {
             this._stateSignal.update((state) => ({ ...state, data }));
+            this.getTracker.success();
           },
           error: (err) => {
-            this.updateError(err?.message || 'Could not get stock');
-            this.completeLoading();
+            this.getTracker.error(err?.error?.message || 'Could not get stock');
           },
-          complete: () => {
-            this.completeLoading();
-          }
         });
       }
     });

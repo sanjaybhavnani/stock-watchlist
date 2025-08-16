@@ -12,6 +12,13 @@ export class StocksService {
   private http = inject(HttpClient);
   private stockApiUrl = environment.api + '/stocks';
   private webSocketService = inject(WebSocketService);
+
+  stocksPrices$ = this.webSocketService.socket$.pipe(
+      filter((message) => message.channel === 'stockPrices'),
+      bufferTime(1500),
+      map((messages) => messages[messages.length - 1]?.data),
+      filter((msg) => !!msg)
+    );
   constructor() {}
 
   searchStocks(searchText: string): Observable<Stock[]> {
@@ -22,15 +29,6 @@ export class StocksService {
   getStock(symbol: string): Observable<Stock> {
     const url = `${this.stockApiUrl}/${symbol}`;
     return this.http.get<Stock>(url);
-  }
-
-  get stocksPrices$(): Observable<{ [key: string]: number }> {
-    return this.webSocketService.socket$.pipe(
-      filter((message) => message.channel === 'stockPrices'),
-      bufferTime(2000),
-      map((messages) => messages[messages.length - 1]?.data),
-      filter((msg) => !!msg)
-    );
   }
 
   subscribeStockPrices(

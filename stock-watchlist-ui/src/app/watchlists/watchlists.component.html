@@ -1,0 +1,41 @@
+<h1 class="page-heading flex justify-between">
+  Watchlists
+  <a mat-button [routerLink]="['new']">
+    <mat-icon fontIcon="add"></mat-icon>
+    New Watchlist
+  </a>
+</h1>
+
+@if (watchlistsStore.getTracker.isRunning()) { 
+  Loading watchlists... 
+} 
+@else if(watchlistsStore.noResults()) {
+<div class="empty-watchlists-view">
+  <p>You have no watchlists</p>
+  <button mat-flat-button (click)="createWatchlist()">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Create watchlist"
+      fontIcon="add"
+    ></mat-icon>
+    Create Watchlist
+  </button>
+</div>
+} @else {
+<mat-list #watchlists>
+  @for(wl of watchlistsStore.data(); track wl.id) {
+  <mat-list-item>
+    <div class="flex justify-between">
+      <a mat-button [routerLink]="[wl.id, 'live']">{{ wl.name }}</a>
+      <div>
+        <button mat-button type="button" title="Edit Watchlist" [routerLink]="[wl.id]">
+          <mat-icon fontIcon="edit"></mat-icon>
+        </button>
+      </div>
+
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  }
+</mat-list>
+}

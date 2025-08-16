@@ -1,51 +1,49 @@
-.stock-card {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  line-height: 1.5;
+:host {
+  display: block;
+  .stock-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    line-height: 1.5;
 
-  .stock-card-left {
-    .stock-name {
-      color: rgb(45, 122, 211);
-      font-size: 1.25rem;
-      font-weight: 800;
-      max-width: 220px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .stock-symbol {
-      color: #4c5359;
-      font-weight: 900;
-      text-transform: uppercase;
-      font-size: 1rem;
-    }
-
-    .last-price {
-      font-size: 0.85rem;
-      color: #393939;
-      font-weight: 300;
-    }
-  }
-
-  .stock-card-right {
-    .current-price {
-      font-size: 1.25rem;
-      font-weight: 800;
-    }
-    .stock-change {
-      font-weight: 500;
-    }
-
-    .stock-change, .current-price {
-      &.up {
-        color: rgb(16, 115, 16);
+    .stock-card-left {
+      .stock-name {
+        color: rgb(45, 122, 211);
+        font-size: 1.25rem;
+        font-weight: 800;
+        max-width: 220px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
-      &.down {
-        color: rgb(214, 26, 26);
+
+      .last-price {
+        font-size: 0.85rem;
+        color: #393939;
+        font-weight: 300;
+      }
+    }
+
+    .stock-card-right {
+      .current-price {
+        font-size: 1.25rem;
+        font-weight: 800;
+      }
+      .stock-change {
+        font-weight: 500;
+      }
+
+      .stock-change,
+      .current-price {
+        &.up {
+          color: rgb(16, 115, 16);
+        }
+        &.down {
+          color: rgb(214, 26, 26);
+        }
       }
     }
   }

@@ -1,0 +1,30 @@
+@if(watchlistStore.data(); as storeData) {
+<h4 class="flex justify-between">
+  <span>Watchlist: {{ storeData.name }} </span>
+  <a mat-button [routerLink]="['/watchlists']">All watchlists</a>
+</h4>
+
+@if(watchlistStore.data()?.stocks?.length && watchlistStore.data()?.stocks; as stocks) {
+        @if(stockPrices$ | async; as stockPrices) {
+            @for(stock of stocks; track stock.symbol) {
+                <app-stock-card [stock]="stock" [latestPrice]="stockPrices[stock.symbol]">
+                </app-stock-card>
+                
+            }
+        } @else {
+            <p class="text-center">
+                Loading prices...
+            </p>
+        }
+    }
+    @else if(watchlistStore.getTracker.isRunning()) {
+        <p class="text-center">
+            Loading watchlist...
+        </p>
+    } @else if(watchlistStore.data()?.stocks?.length === 0) {
+        <p class="text-center">
+           <a mat-flat-button [routerLink]="['..']">Click to add stocks</a>
+        </p>
+        
+    }
+}

@@ -7,6 +7,7 @@ import { StocksController } from './stocks/stocks.controller';
 import { IntervalDataSource } from './data/interval-data-source';
 import { socketServer } from './websocket/socket-server';
 import http from 'http';
+import { WatchListsController } from './watchlists/watchlists.controller';
 
 (async () => {
   await initDb();
@@ -20,6 +21,7 @@ import http from 'http';
 
   app.use('/api/health-check', new HealthCheckController().router);
   app.use('/api/stocks', new StocksController().router);
+  app.use('/api/watchlists', new WatchListsController().router);
   const server = http.createServer(app);
 
   socketServer(server);

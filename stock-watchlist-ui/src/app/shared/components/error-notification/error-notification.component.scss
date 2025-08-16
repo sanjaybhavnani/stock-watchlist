@@ -1,0 +1,8 @@
+:host {
+    display: flex;
+    border-radius: 4px;
+    .error-label, mat-button {
+        color: rgb(240, 219, 219);
+    }
+    background-color: rgb(199, 46, 46);
+}

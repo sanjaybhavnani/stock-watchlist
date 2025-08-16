@@ -10,21 +10,22 @@
       #searchOptions="matAutocomplete"
       (optionSelected)="onStockSelected($event.option.value)"
     >
-      @if(stockSearchStore.loading()) {
+      @if(stockSearchStore.getTracker.isRunning()) {
       <mat-option class="non-selectable-option" disabled
         >Searching...</mat-option
       >
-      } @else if(stockSearchStore.errorMessage()) {
+      } @else if(stockSearchStore.getTracker.lastError()) {
       <mat-option class="non-selectable-option" disabled>
         <span class="error-text">
-          {{ stockSearchStore.errorMessage() }}
+          {{ stockSearchStore.getTracker.lastError() }}
         </span>
       </mat-option>
 
-      } @else if(stockSearchStore.noResults()) {
+      } @else if(stockSearchStore.noResults() &&
+      this.stockSearchStore.params().length >=3) {
       <mat-option class="non-selectable-option" disabled>No results</mat-option>
       } @else { @for(option of stockSearchStore.data(); track option) {
-      <mat-option [value]="option.symbol">
+      <mat-option [value]="option">
         <div class="app-search-result-row">
           <span>{{ option.name }} </span>
           <span class="stock-symbol">{{ option.symbol }}</span>

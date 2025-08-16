@@ -1,18 +1,20 @@
-import { Component, EventEmitter, inject, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import {
-  FormBuilder,
-  ReactiveFormsModule
-} from '@angular/forms';
+  Component,
+  EventEmitter,
+  inject,
+  Input,
+  OnDestroy,
+  OnInit,
+  Output,
+} from '@angular/core';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {
-  debounceTime,
-  Subject,
-  takeUntil
-} from 'rxjs';
+import { debounceTime, Subject, takeUntil } from 'rxjs';
 import { StockSearchStore } from './stock-search.store';
+import { Stock } from '../../models/stock.model';
 @Component({
   selector: 'app-stock-search',
   imports: [
@@ -29,13 +31,12 @@ export class StockSearchComponent implements OnInit, OnDestroy {
   private fb = inject(FormBuilder);
   private destroy$ = new Subject<void>();
   public stockSearchStore = inject(StockSearchStore);
-  
+
   @Output()
-  stockSelected = new EventEmitter<string>();
+  stockSelected = new EventEmitter<Stock>();
 
   @Input()
-  clearOnSelect = false;
-
+  retainSearch = false;
   public searchForm = this.fb.group({
     searchText: [''],
   });
@@ -53,13 +54,23 @@ export class StockSearchComponent implements OnInit, OnDestroy {
       });
   }
 
+  get searchTextLength() {
+    return this.searchForm.controls.searchText.value?.trim().length || 0;
+  }
+
   ngOnDestroy(): void {
     this.destroy$.next();
     this.destroy$.complete();
   }
 
-  onStockSelected(value: string) {
-    this.stockSelected.emit(value);
-    this.searchForm.controls.searchText.setValue('');
+  onStockSelected(stock: Stock) {
+    this.stockSelected.emit(stock);
+    if (this.retainSearch) {
+      this.searchForm.controls.searchText.setValue(
+        this.stockSearchStore.params()
+      );
+    } else {
+      this.searchForm.controls.searchText.setValue('');
+    }
   }
 }

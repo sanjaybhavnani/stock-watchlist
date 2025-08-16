@@ -31,7 +31,7 @@ export class StockSearchStore extends AppBaseStore<Stock[], string> {
       if (searchText.length < 3) {
         return;
       }
-      this.startLoading();
+      this.getTracker.start();
       if (this.searchSubscription && !this.searchSubscription.closed) {
         this.searchSubscription.unsubscribe();
       }
@@ -45,10 +45,10 @@ export class StockSearchStore extends AppBaseStore<Stock[], string> {
             }));
           },
           error: (err) => {
-            this.updateError(err?.message || 'Search Failed');
+            this.getTracker.error(err?.error?.message || 'Search Failed');
           },
           complete: () => {
-            this.completeLoading();
+            this.getTracker.success();
           },
         });
     });

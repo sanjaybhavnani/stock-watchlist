@@ -1,0 +1,56 @@
+<div class="watchlist-details" (submit)="saveWatchlist()">
+  <h1 class="page-heading margin-bottom">
+    {{ isNewWatchlist ? 'New Watchlist' : 'Watchlist: ' + watchlistStore.data()?.name }}
+  </h1>
+
+  <form [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Watchlist name</mat-label>
+      <input formControlName="name" matInput placeholder="Watchlist name" />
+      @if (form.get('name')?.invalid) {
+      <mat-error>Name is required</mat-error>
+      }
+    </mat-form-field>
+
+    <app-stock-search
+      [retainSearch]="true"
+      (stockSelected)="addStock($event)"
+    ></app-stock-search>
+
+    @if(watchlistStocks.length > 0) {
+    <h4>Stocks in watchlist</h4>
+    }
+    <mat-selection-list #wlStocks>
+      @for(stock of watchlistStocks; track stock.symbol) {
+      <mat-list-option [value]="stock">
+        {{ stock.name }}
+        <span class="stock-symbol">{{ stock.symbol }}</span></mat-list-option
+      >
+      }
+    </mat-selection-list>
+
+    <div class="flex justify-between">
+      <div>
+        <button
+          mat-flat-button
+          type="submit"
+          [disabled]="form.invalid || watchlistStore.saveTracker.isRunning()"
+        >
+          Save Watchlist
+        </button>
+        <a
+          mat-button
+          type="button"
+          [routerLink]="['/watchlists']"
+          [disabled]="watchlistStore.saveTracker.isRunning()"
+          >Cancel</a
+        >
+      </div>
+      @if(wlStocks?.selectedOptions?.selected?.length) {
+      <div>
+        <button type="button" mat-button (click)="removeSelected(wlStocks.selectedOptions.selected)">Remove stocks</button>
+      </div>
+      }
+    </div>
+  </form>
+</div>

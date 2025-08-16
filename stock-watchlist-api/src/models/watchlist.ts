@@ -1,7 +1,7 @@
 import { Stock } from "./stock";
 
 export interface Watchlist {
-    id: number;
+    id: string;
     name: string;
     stocks: Stock[]
 }

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
+import { Subject } from 'rxjs';
 import { environment } from '../../../environments/environment';
-import { Observable } from 'rxjs';
 
 export interface WebsocketMessage {
   action: 'sub' | 'unsub';
@@ -12,30 +11,26 @@ export interface WebsocketMessage {
   providedIn: 'root'
 })
 export class WebSocketService {
-  private _socket$!: WebSocketSubject<any>;
-  
-  get socket$(): Observable<any> {
-    if(!this._socket$) {
-      this.connect();
-    }
-    return this._socket$.asObservable();
-  }
-  
-  connect() {
-    if(!this._socket$ || this._socket$.closed) {
-      this._socket$ = webSocket(`${environment.ws}`);
-    }
-  }
+  private _socket$: Subject<any> = new Subject();
+  public socket$ = this._socket$.asObservable();
+  private websocket = new WebSocket(`${environment.ws}`);
 
+  constructor() {
+    this.websocket.onmessage = (evt) => {
+      let messageJson;
+      try {
+        messageJson = JSON.parse(evt.data)
+        this._socket$.next(messageJson);
+      }catch(err) {
+        console.error('invalid message data', evt.data)
+      }
+    }  
+  }
   sendMessage<T extends WebsocketMessage>(msg: T) {
-    this._socket$.next(msg);
+    this.websocket.send(JSON.stringify(msg));
   }
 
   close() {
-    this._socket$?.complete();
+    this.websocket.close();
   }
-
-
-
-  constructor() { }
 }

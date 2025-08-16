@@ -1,0 +1,19 @@
+.error-text {
+  color: rgb(246, 75, 75);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  &.justify-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}

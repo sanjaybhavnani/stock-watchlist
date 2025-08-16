@@ -1141,6 +1141,95 @@
       "lastClose": 687.57
     }
   ],
-  "watchlists": [],
+  "watchlists": [
+    {
+      "name": "Banks",
+      "stocks": [
+        {
+          "symbol": "ICICIBANK",
+          "name": "ICICI Bank Ltd.",
+          "lastClose": 4305.61
+        },
+        {
+          "symbol": "HDFCBANK",
+          "name": "HDFC Bank Ltd.",
+          "lastClose": 977.08
+        },
+        {
+          "symbol": "AXISBANK",
+          "name": "Axis Bank Ltd.",
+          "lastClose": 3987.47
+        },
+        {
+          "symbol": "IDFCFIRSTB",
+          "name": "IDFC First Bank Ltd.",
+          "lastClose": 844.41
+        },
+        {
+          "symbol": "PNB",
+          "name": "Punjab National Bank",
+          "lastClose": 617.34
+        }
+      ],
+      "id": "be51598d-10f7-4dde-8529-5df3d630c83b"
+    },
+    {
+      "name": "tech",
+      "stocks": [
+        {
+          "symbol": "HCLTECH",
+          "name": "HCL Technologies Ltd.",
+          "lastClose": 3659.88
+        },
+        {
+          "symbol": "WIPRO",
+          "name": "Wipro Ltd.",
+          "lastClose": 2896.78
+        },
+        {
+          "symbol": "INFY",
+          "name": "Infosys Ltd.",
+          "lastClose": 1185.93
+        },
+        {
+          "symbol": "PERSISTENT",
+          "name": "Persistent Systems Ltd.",
+          "lastClose": 308.75
+        }
+      ],
+      "id": "d13917e4-2f39-4740-84a8-826e2712cad6"
+    },
+    {
+      "name": "Metals",
+      "stocks": [
+        {
+          "symbol": "RATNAMANI",
+          "name": "Ratnamani Metals & Tubes Ltd.",
+          "lastClose": 3946.98
+        },
+        {
+          "symbol": "HINDALCO",
+          "name": "Hindalco Industries Ltd.",
+          "lastClose": 2822.31
+        },
+        {
+          "symbol": "JSWSTEEL",
+          "name": "JSW Steel Ltd.",
+          "lastClose": 2546.84
+        },
+        {
+          "symbol": "SAIL",
+          "name": "Steel Authority of India Ltd.",
+          "lastClose": 2053.85
+        },
+        {
+          "symbol": "JINDALSTEL",
+          "name": "Jindal Steel & Power Ltd.",
+          "lastClose": 1238.8
+        }
+      ],
+      "id": "555e79db-da61-49cc-a420-092db3f92b97"
+    }
+  ],
   "alive": true
 }

@@ -12,17 +12,20 @@ export class WatchListsController {
     this.router.get('/', this.getWatchlists);
     this.router.get('/:id', this.getWatchlistById);
     this.router.post('/', this.createWatchList);
-    this.router.put('/', this.updateWatchlist);
+    this.router.put('/:id', this.updateWatchlist);
     this.router.delete('/:id', this.deleteWatchlist);
   }
 
   private getWatchlists = async (req: Request, res: Response) => {
-    res.status(200).json(this.watchlistsService.getWatchlists());
+    const watchlists = await this.watchlistsService.getWatchlists();
+    const sortedWatchlists = watchlists?.sort((a, b) => a.name.localeCompare(b.name)) || [];
+    res.status(200).json(sortedWatchlists);
   };
 
   private createWatchList = async (req: Request, res: Response) => {
     try {
-      await this.watchlistsService.createWatchList(req.body);
+      const result = await this.watchlistsService.createWatchList(req.body);
+      res.status(201).json(result);
     } catch (err) {
       this.handleError(err as CustomError, res);
     }
@@ -30,7 +33,8 @@ export class WatchListsController {
 
   private updateWatchlist = async (req: Request, res: Response) => {
     try {
-      await this.watchlistsService.updateWatchlist(req.body);
+      const watchlist = await this.watchlistsService.updateWatchlist(req.body);
+      res.status(200).json(watchlist);
     } catch (err) {
       this.handleError(err as CustomError, res);
     }
@@ -39,6 +43,7 @@ export class WatchListsController {
   private deleteWatchlist = async (req: Request, res: Response) => {
     try {
       await this.watchlistsService.deleteWatchlist(req.params.id);
+      res.status(200).send();
     } catch (err) {
       this.handleError(err as CustomError, res);
     }
