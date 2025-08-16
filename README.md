@@ -61,17 +61,17 @@ This section outlines detailed requirements and provides high level UI direction
 
 ## Technology
 
-This section outlines what technology will be used to develop the app.
+This section outlines what technology used to develop the app.
 
 ### Backend
 
-Backend will be an node and express app. This will be responsible for the following
+Backend is a node and express app. This is responsible for the following
 
-- Maintaining in-memory database for stocks, prices, watchlists and alerts.
-- It will contain a master source that mimicks a live feed of 200 stocks. It emits the randomly generated prices of the stocks every 100ms
-- It provides a web socket based endpoints to
-  1. Subscribe to realtime price updates of upto 20 stocks at a time.
-  2. Notify subscribers when price alerts are met.
+- Maintaining JSON file based database for stocks, prices, watchlists and alerts. LowDB is used for this.
+- Hosts a master data source that mimicks a live feed of 200 stocks. It emits the randomly generated prices of the stocks every 100ms
+- It provides a web socket connection for
+  1. Subscribing to realtime price updates of stocks
+  2. Notifying subscribers when price alerts are met.
 - It also provides following RESTFul APIs
   - Stocks: GET with query params (Used for search)
   - Watchlists: GET all watchlists of users.
@@ -81,9 +81,9 @@ Backend will be an node and express app. This will be responsible for the follow
 
 ### Frontend
 
-- Frontend will be built using Angular framework
-- Angular material will be used for UI Components.
-- State management will be done using ngrx store, effects and component-store
-- rxjs/webSocket for communication with websockets
+- Frontend built using Angular framework
+- Angular material used for UI Components.
+- State management: Angular native signals. RxJS for events.
+- WebSocket for live feed of stock prices.
 - HttpClient for communication with APIs
 - CSS: Mix of CSS in components css file and custom css in global css
