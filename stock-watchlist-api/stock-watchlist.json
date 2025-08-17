@@ -1169,6 +1169,11 @@
           "symbol": "RELIANCE",
           "name": "Reliance Industries Ltd.",
           "lastClose": 2806.87
+        },
+        {
+          "symbol": "ITC",
+          "name": "ITC Ltd.",
+          "lastClose": 2121.12
         }
       ],
       "id": "be51598d-10f7-4dde-8529-5df3d630c83b"
@@ -1210,6 +1215,11 @@
           "symbol": "IRCTC",
           "name": "Indian Railway Catering & Tourism Corporation Ltd.",
           "lastClose": 2082.19
+        },
+        {
+          "symbol": "ITC",
+          "name": "ITC Ltd.",
+          "lastClose": 2121.12
         }
       ],
       "id": "d13917e4-2f39-4740-84a8-826e2712cad6"
@@ -1282,6 +1292,11 @@
           "symbol": "RELIANCE",
           "name": "Reliance Industries Ltd.",
           "lastClose": 2806.87
+        },
+        {
+          "symbol": "ITC",
+          "name": "ITC Ltd.",
+          "lastClose": 2121.12
         }
       ],
       "id": "86b4c4c5-5f2c-4d6f-a658-f1d567c77860"

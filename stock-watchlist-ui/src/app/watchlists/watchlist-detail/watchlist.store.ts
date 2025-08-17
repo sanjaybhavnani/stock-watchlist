@@ -44,7 +44,7 @@ export class WatchlistStore extends AppBaseStore<Watchlist | null, string> {
           ...state,
           data,
         }));
-        this.saveTracker.success();
+        this.saveTracker.success(data);
       },
       error: (err) => {
         this._stateSignal.update((state) => ({

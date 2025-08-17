@@ -2,7 +2,7 @@ import { signal, WritableSignal } from '@angular/core';
 import { filter, Subject } from 'rxjs';
 export type TrackerEvent =
   | { type: 'started' }
-  | { type: 'success' }
+  | { type: 'success', data?: any }
   | { type: 'failed'; errorMessage: string | null };
 
 export class APICallTracker {
@@ -22,8 +22,8 @@ export class APICallTracker {
     this._isRunning.set(true);
   }
 
-  success(): void {
-    this._trackerEvent.next({ type: 'success' });
+  success(data?: any): void {
+    this._trackerEvent.next({ type: 'success', data });
     this._isRunning.set(false);
   }
 

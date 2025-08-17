@@ -13,6 +13,7 @@ import { WatchlistStore } from '../../watchlists/watchlist-detail/watchlist.stor
 import { Watchlist } from '../../watchlists/watchlist.model';
 import { Stock } from '../../shared/models/stock.model';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { ErrorNotificationComponent } from '../../shared/components/error-notification/error-notification.component';
 
 @Component({
   selector: 'app-stock-detail',
@@ -86,17 +87,35 @@ export class StockDetailComponent implements OnInit, OnDestroy {
         },
         watchlist.id as string
       );
+    } else {
+      this._snackBar.openFromComponent(ErrorNotificationComponent, {
+        data: {
+          errorMessage: `${stock.name} already present in the watchlist.`,
+        },
+        verticalPosition: 'top',
+        horizontalPosition: 'end',
+      });
     }
 
     this.watchlistStore.saveTracker.callComplete$
       .pipe(take(1))
       .subscribe((result) => {
         if (result.type === 'failed') {
+          this._snackBar.openFromComponent(ErrorNotificationComponent, {
+            data: {
+              errorMessage: result.errorMessage || 'Could not add to watchlist',
+            },
+            verticalPosition: 'top',
+            horizontalPosition: 'end',
+          });
         } else {
           this._snackBar.open('Success', 'Dismiss', {
             verticalPosition: 'top',
             horizontalPosition: 'end',
           });
+          if (result.data) {
+            this.watchlistsStore.updateWatchlist(result.data);
+          }
         }
       });
   }

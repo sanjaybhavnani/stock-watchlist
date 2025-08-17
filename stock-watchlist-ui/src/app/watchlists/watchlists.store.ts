@@ -2,13 +2,13 @@ import { inject, Injectable, signal, Signal } from '@angular/core';
 import { AppBaseStore } from '../shared/store/base.store';
 import { Watchlist } from './watchlist.model';
 import { WatchlistsService } from '../shared/services/watchlists.service';
+import { Stock } from '../shared/models/stock.model';
 
 export enum WatchlistsStoreEvents {
   WatchlistsLoaded = 'Watchlists Loaded',
 }
 @Injectable()
 export class WatchlistsStore extends AppBaseStore<Watchlist[], string> {
-
   private watchlistService = inject(WatchlistsService);
   constructor() {
     super([], '');
@@ -35,5 +35,14 @@ export class WatchlistsStore extends AppBaseStore<Watchlist[], string> {
         this.getTracker.success();
       },
     });
+  }
+
+  updateWatchlist(watchlist: Watchlist) {
+    this._stateSignal.update((state) => ({
+      ...state,
+      data: state.data.map((w) =>
+        w.id === watchlist.id ? { ...watchlist } : w
+      ),
+    }));
   }
 }
