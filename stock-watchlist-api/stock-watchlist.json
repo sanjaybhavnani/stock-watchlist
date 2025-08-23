@@ -1143,58 +1143,17 @@
   ],
   "watchlists": [
     {
-      "name": "Banks",
+      "name": "Technology",
       "stocks": [
-        {
-          "symbol": "ICICIBANK",
-          "name": "ICICI Bank Ltd.",
-          "lastClose": 4305.61
-        },
-        {
-          "symbol": "HDFCBANK",
-          "name": "HDFC Bank Ltd.",
-          "lastClose": 977.08
-        },
-        {
-          "symbol": "PNB",
-          "name": "Punjab National Bank",
-          "lastClose": 617.34
-        },
-        {
-          "symbol": "TATASTEEL",
-          "name": "Tata Steel Ltd.",
-          "lastClose": 3615.91
-        },
-        {
-          "symbol": "RELIANCE",
-          "name": "Reliance Industries Ltd.",
-          "lastClose": 2806.87
-        },
-        {
-          "symbol": "ITC",
-          "name": "ITC Ltd.",
-          "lastClose": 2121.12
-        }
-      ],
-      "id": "be51598d-10f7-4dde-8529-5df3d630c83b"
-    },
-    {
-      "name": "tech",
-      "stocks": [
-        {
-          "symbol": "HCLTECH",
-          "name": "HCL Technologies Ltd.",
-          "lastClose": 3659.88
-        },
-        {
-          "symbol": "WIPRO",
-          "name": "Wipro Ltd.",
-          "lastClose": 2896.78
-        },
         {
           "symbol": "INFY",
           "name": "Infosys Ltd.",
           "lastClose": 1185.93
+        },
+        {
+          "symbol": "TCS",
+          "name": "Tata Consultancy Services Ltd.",
+          "lastClose": 1342.19
         },
         {
           "symbol": "PERSISTENT",
@@ -1202,71 +1161,76 @@
           "lastClose": 308.75
         },
         {
-          "symbol": "RELIANCE",
-          "name": "Reliance Industries Ltd.",
-          "lastClose": 2806.87
+          "symbol": "WIPRO",
+          "name": "Wipro Ltd.",
+          "lastClose": 2896.78
         },
         {
-          "symbol": "TATASTEEL",
-          "name": "Tata Steel Ltd.",
-          "lastClose": 3615.91
+          "symbol": "TECHM",
+          "name": "Tech Mahindra Ltd.",
+          "lastClose": 2465.32
         },
+        {
+          "symbol": "IRCTC",
+          "name": "Indian Railway Catering & Tourism Corporation Ltd.",
+          "lastClose": 2082.19
+        }
+      ],
+      "id": "041898f2-8f60-4ce6-a637-84f40fa15a3f"
+    },
+    {
+      "name": "Banks",
+      "stocks": [
+        {
+          "symbol": "HDFCBANK",
+          "name": "HDFC Bank Ltd.",
+          "lastClose": 977.08
+        },
+        {
+          "symbol": "ICICIBANK",
+          "name": "ICICI Bank Ltd.",
+          "lastClose": 4305.61
+        },
+        {
+          "symbol": "SBIN",
+          "name": "State Bank of India",
+          "lastClose": 2201.85
+        },
+        {
+          "symbol": "KOTAKBANK",
+          "name": "Kotak Mahindra Bank Ltd.",
+          "lastClose": 1348.84
+        },
+        {
+          "symbol": "AXISBANK",
+          "name": "Axis Bank Ltd.",
+          "lastClose": 3987.47
+        }
+      ],
+      "id": "0fac3ec1-21a6-4f13-89f4-b434109cf973"
+    },
+    {
+      "name": "Other",
+      "stocks": [
         {
           "symbol": "IRCTC",
           "name": "Indian Railway Catering & Tourism Corporation Ltd.",
           "lastClose": 2082.19
         },
         {
-          "symbol": "ITC",
-          "name": "ITC Ltd.",
-          "lastClose": 2121.12
-        }
-      ],
-      "id": "d13917e4-2f39-4740-84a8-826e2712cad6"
-    },
-    {
-      "name": "Metals",
-      "stocks": [
-        {
-          "symbol": "RATNAMANI",
-          "name": "Ratnamani Metals & Tubes Ltd.",
-          "lastClose": 3946.98
+          "symbol": "RECLTD",
+          "name": "REC Ltd.",
+          "lastClose": 1908.26
         },
         {
-          "symbol": "HINDALCO",
-          "name": "Hindalco Industries Ltd.",
-          "lastClose": 2822.31
+          "symbol": "TITAGARH",
+          "name": "Titagarh Rail Systems Ltd.",
+          "lastClose": 2851.71
         },
         {
-          "symbol": "JSWSTEEL",
-          "name": "JSW Steel Ltd.",
-          "lastClose": 2546.84
-        },
-        {
-          "symbol": "SAIL",
-          "name": "Steel Authority of India Ltd.",
-          "lastClose": 2053.85
-        },
-        {
-          "symbol": "JINDALSTEL",
-          "name": "Jindal Steel & Power Ltd.",
-          "lastClose": 1238.8
-        },
-        {
-          "symbol": "RELIANCE",
-          "name": "Reliance Industries Ltd.",
-          "lastClose": 2806.87
-        }
-      ],
-      "id": "555e79db-da61-49cc-a420-092db3f92b97"
-    },
-    {
-      "name": "Metal stocks",
-      "stocks": [
-        {
-          "symbol": "RATNAMANI",
-          "name": "Ratnamani Metals & Tubes Ltd.",
-          "lastClose": 3946.98
+          "symbol": "TITAN",
+          "name": "Titan Company Ltd.",
+          "lastClose": 3409.51
         },
         {
           "symbol": "TATASTEEL",
@@ -1274,32 +1238,17 @@
           "lastClose": 3615.91
         },
         {
+          "symbol": "TATAMOTORS",
+          "name": "Tata Motors Ltd.",
+          "lastClose": 484.61
+        },
+        {
           "symbol": "SAIL",
           "name": "Steel Authority of India Ltd.",
           "lastClose": 2053.85
-        },
-        {
-          "symbol": "JINDALSTEL",
-          "name": "Jindal Steel & Power Ltd.",
-          "lastClose": 1238.8
-        },
-        {
-          "symbol": "WIPRO",
-          "name": "Wipro Ltd.",
-          "lastClose": 2896.78
-        },
-        {
-          "symbol": "RELIANCE",
-          "name": "Reliance Industries Ltd.",
-          "lastClose": 2806.87
-        },
-        {
-          "symbol": "ITC",
-          "name": "ITC Ltd.",
-          "lastClose": 2121.12
         }
       ],
-      "id": "86b4c4c5-5f2c-4d6f-a658-f1d567c77860"
+      "id": "3d52e359-6ead-4de4-9773-4c91c9f69f8c"
     }
   ],
   "alive": true

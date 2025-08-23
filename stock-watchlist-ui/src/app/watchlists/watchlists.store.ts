@@ -45,4 +45,20 @@ export class WatchlistsStore extends AppBaseStore<Watchlist[], string> {
       ),
     }));
   }
+
+  deleteOne(watchlist: Watchlist) {
+    this.saveTracker.start();
+    this.watchlistService.deleteOne(watchlist.id!).subscribe( {
+      next: () => {
+        this.saveTracker.success();
+        this._stateSignal.update(state => ({
+          ...state,
+          data: state.data.filter(item => item.id !== watchlist.id)
+        }))
+      },
+      error: (err) => {
+        this.saveTracker.error(err?.message || 'Could not delete watchlist');
+      }
+    })
+  }
 }

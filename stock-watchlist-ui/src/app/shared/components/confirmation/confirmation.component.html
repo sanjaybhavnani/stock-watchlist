@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>{{ data.title }}</h2>
+<mat-dialog-content>
+  <p> {{ data.message }}</p>
+  <mat-form-field>
+    <mat-label>Favorite Animal</mat-label>
+    
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close(false)">{{data.cancelLabel}}</button>
+  <button mat-button (click)="dialogRef.close(true)" cdkFocusInitial>{{data.okLabel}}</button>
+</mat-dialog-actions>

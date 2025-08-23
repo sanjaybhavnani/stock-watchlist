@@ -1,4 +1,11 @@
-import { Component, DestroyRef, effect, inject, OnInit } from '@angular/core';
+import {
+  Component,
+  DestroyRef,
+  effect,
+  inject,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { WatchlistStore } from '../watchlist-detail/watchlist.store';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
@@ -15,9 +22,8 @@ import { MatDivider } from '@angular/material/divider';
   templateUrl: './watchlist-live.component.html',
   styleUrl: './watchlist-live.component.scss',
 })
-export class WatchlistLiveComponent implements OnInit {
+export class WatchlistLiveComponent implements OnInit, OnDestroy {
   watchlistStore = inject(WatchlistStore);
-  destroyRef = inject(DestroyRef);
   private route = inject(ActivatedRoute);
   private stocksService = inject(StocksService);
   stockPrices$ = this.stocksService.stocksPrices$;
@@ -29,10 +35,9 @@ export class WatchlistLiveComponent implements OnInit {
         this.subscribeToFeed(stocks);
       }
     });
-
-    this.destroyRef.onDestroy(() => {
-      this.stocksService.unsubscribeStockPrices();
-    });
+  }
+  ngOnDestroy(): void {
+    this.stocksService.unsubscribeStockPrices();
   }
   ngOnInit() {
     const id = this.route.snapshot?.paramMap.get('id');

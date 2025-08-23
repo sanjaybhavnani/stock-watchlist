@@ -1,6 +1,6 @@
 <h1 class="page-heading flex justify-between">
   Watchlists
-  <a mat-button [routerLink]="['new']">
+  <a mat-flat-button [routerLink]="['new']">
     <mat-icon fontIcon="add"></mat-icon>
     New Watchlist
   </a>
@@ -28,8 +28,11 @@
     <div class="flex justify-between">
       <a mat-button [routerLink]="[wl.id, 'live']">{{ wl.name }}</a>
       <div>
-        <button mat-icon-button type="button" title="Edit Watchlist" [routerLink]="[wl.id]">
+        <button [disabled]="watchlistsStore.saveTracker.isRunning()" mat-icon-button type="button" title="Edit Watchlist" [routerLink]="[wl.id]">
           <mat-icon>edit</mat-icon>
+        </button>
+         <button [disabled]="watchlistsStore.saveTracker.isRunning()" class="delete-button" mat-icon-button type="button" title="Remove Watchlist" (click)="deleteWatchlist(wl)">
+          <mat-icon>delete</mat-icon>
         </button>
       </div>
 
