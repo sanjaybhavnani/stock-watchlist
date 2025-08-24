@@ -1,6 +1,7 @@
 @use '@angular/material' as mat;
 
 html {
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   @include mat.theme((
     typography: (
       plain-family: Noto Sans,
@@ -10,5 +11,9 @@ html {
       regular-weight: 300,
     ),
     density: 0,
+  ));
+  @include mat.toolbar-overrides((
+    container-background-color: var(--mat-sys-primary),
+    container-text-color: var(--mat-sys-on-primary),
   ));
 }

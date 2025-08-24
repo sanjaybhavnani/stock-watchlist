@@ -1,9 +1,9 @@
 :host {
   display: block;
   .stock-card {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
     padding: 1rem 1.5rem;
     border-radius: 10px;
     border: 1px solid #ddd;

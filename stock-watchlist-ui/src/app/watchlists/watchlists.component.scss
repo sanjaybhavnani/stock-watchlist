@@ -4,20 +4,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 300px;
-    gap: 16px;
+    min-height: 200px;
     padding: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    border: 1px solid #ddd;
   }
   padding: 1rem;
   border: 1px solid #ddd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--box-shadow);
   display: block;
   border-radius: 0.5rem;
 
   .delete-button {
-    color: rgb(190, 33, 33);
+    color: var(--mat-sys-error);
   }
 }

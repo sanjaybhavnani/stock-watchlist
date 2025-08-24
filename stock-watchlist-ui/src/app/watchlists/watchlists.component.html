@@ -1,9 +1,11 @@
 <h1 class="page-heading flex justify-between">
-  Watchlists
-  <a mat-flat-button [routerLink]="['new']">
+  @if(!watchlistsStore.noResults()) {
+    Watchlists
+    <a mat-flat-button [routerLink]="['new']">
     <mat-icon fontIcon="add"></mat-icon>
     New Watchlist
   </a>
+  }
 </h1>
 
 @if (watchlistsStore.getTracker.isRunning()) { 
@@ -11,7 +13,7 @@
 } 
 @else if(watchlistsStore.noResults()) {
 <div class="empty-watchlists-view">
-  <p>You have no watchlists</p>
+  <h4>You have no watchlists</h4>
   <button mat-flat-button (click)="createWatchlist()">
     <mat-icon
       aria-hidden="false"

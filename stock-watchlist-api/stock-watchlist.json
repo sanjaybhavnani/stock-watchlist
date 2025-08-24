@@ -1143,42 +1143,6 @@
   ],
   "watchlists": [
     {
-      "name": "Technology",
-      "stocks": [
-        {
-          "symbol": "INFY",
-          "name": "Infosys Ltd.",
-          "lastClose": 1185.93
-        },
-        {
-          "symbol": "TCS",
-          "name": "Tata Consultancy Services Ltd.",
-          "lastClose": 1342.19
-        },
-        {
-          "symbol": "PERSISTENT",
-          "name": "Persistent Systems Ltd.",
-          "lastClose": 308.75
-        },
-        {
-          "symbol": "WIPRO",
-          "name": "Wipro Ltd.",
-          "lastClose": 2896.78
-        },
-        {
-          "symbol": "TECHM",
-          "name": "Tech Mahindra Ltd.",
-          "lastClose": 2465.32
-        },
-        {
-          "symbol": "IRCTC",
-          "name": "Indian Railway Catering & Tourism Corporation Ltd.",
-          "lastClose": 2082.19
-        }
-      ],
-      "id": "041898f2-8f60-4ce6-a637-84f40fa15a3f"
-    },
-    {
       "name": "Banks",
       "stocks": [
         {
@@ -1207,48 +1171,7 @@
           "lastClose": 3987.47
         }
       ],
-      "id": "0fac3ec1-21a6-4f13-89f4-b434109cf973"
-    },
-    {
-      "name": "Other",
-      "stocks": [
-        {
-          "symbol": "IRCTC",
-          "name": "Indian Railway Catering & Tourism Corporation Ltd.",
-          "lastClose": 2082.19
-        },
-        {
-          "symbol": "RECLTD",
-          "name": "REC Ltd.",
-          "lastClose": 1908.26
-        },
-        {
-          "symbol": "TITAGARH",
-          "name": "Titagarh Rail Systems Ltd.",
-          "lastClose": 2851.71
-        },
-        {
-          "symbol": "TITAN",
-          "name": "Titan Company Ltd.",
-          "lastClose": 3409.51
-        },
-        {
-          "symbol": "TATASTEEL",
-          "name": "Tata Steel Ltd.",
-          "lastClose": 3615.91
-        },
-        {
-          "symbol": "TATAMOTORS",
-          "name": "Tata Motors Ltd.",
-          "lastClose": 484.61
-        },
-        {
-          "symbol": "SAIL",
-          "name": "Steel Authority of India Ltd.",
-          "lastClose": 2053.85
-        }
-      ],
-      "id": "3d52e359-6ead-4de4-9773-4c91c9f69f8c"
+      "id": "40cd9557-8246-408f-b501-a5cb2a02e1dd"
     }
   ],
   "alive": true

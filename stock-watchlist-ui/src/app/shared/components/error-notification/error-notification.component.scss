@@ -2,7 +2,7 @@
     display: flex;
     border-radius: 4px;
     .error-label, mat-button {
-        color: rgb(240, 219, 219);
+        color: var(--mat-sys-on-error);
     }
-    background-color: rgb(199, 46, 46);
+    background-color: var(--mat-sys-error);
 }

@@ -4,9 +4,8 @@
     }
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--box-shadow);
     padding: 1rem;
     margin: 1rem 0;
-    transition: box-shadow 0.2s;
     border: 1px solid #ddd;
 }
